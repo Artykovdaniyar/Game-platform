@@ -1,0 +1,11 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin mobileContainer {
+    padding: 0px 20px;
+}
+@mixin borderBottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

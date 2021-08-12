@@ -1,0 +1,279 @@
+@media (max-width: 426px) {
+    .profile {
+        // overflow-x: hidden;
+        &__header {
+            position: relative;
+            height: 146px;
+            margin-top: 20px;
+        }
+        &__main{
+            padding-bottom: 60px !important;
+        }
+        &__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 40%;
+            height: auto;
+    
+        }
+    
+        &__state-list {
+            @include flexCenter;
+            padding: 20px 0 0;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+    
+        &__state-item {
+            flex: 0 0 50%;
+            min-height: 60px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            &:nth-child(even){
+                text-align: right;
+            }
+            &:nth-child(odd){
+                text-align: left;
+            }
+        }
+    
+        &__stte-name {
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+    
+        &__state-number {
+        }
+    
+        &__btns-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 30px;
+            text-align: center;
+        }
+    
+        &__btn {
+            color: white;
+            font-size: 12px;
+            line-height: 13px;
+            border: none;
+            background: none;
+            &:first-child{
+                margin-right: 10px;
+            }
+    
+        }
+    
+        &__btn-like {
+        }
+    
+        &__btn-dislike {
+        }
+    
+        &__descr {
+            padding: 30px 0 60px;
+        }
+    
+        &__descr-title {
+            margin-bottom: 10px;
+        }
+    
+        &__descr-text {
+        }
+    
+        &__mark {
+            padding-bottom: 50px;
+        }
+    
+        &__mark-title {
+            margin-bottom: 17px;
+        }
+    
+        &__mark-list {
+            list-style: none;
+        }
+    
+        &__mark-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    
+        &__mark-name {
+            font-size: 12px;
+            line-height: 14px;
+            color: #B5B5B5;
+            font-weight: 400;
+    
+        }
+    
+        &__mark-dots {
+            transform: translateX(-85%);
+    
+        }
+    
+        &__mark-politeness {
+        }
+    
+        &__mark-punctuality {
+        }
+    
+        &__mark-adequacy {
+        }
+    
+        &__review {
+        }
+    
+        &__review-title {
+        }
+    
+        &__area {
+        }
+    
+        &__comment {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 0;
+    
+        }
+    
+        &__comment-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    
+        &__comment-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #B5B5B5;
+        }
+    
+        &__comment-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #5B6C7C;
+            &:not(:last-child){
+                @include borderBottom;
+            }
+        }
+    
+        &__comment-author {
+        }
+    
+        &__comment-date {
+            transform: translateX(-90%);
+        }
+    
+        &__review-btn {
+            margin-top: 40px !important;
+        }
+    
+        &__conform {
+            padding-top: 40px;
+        }
+    
+        &__conform-title {
+            margin-bottom: 30px;
+        }
+    
+        &__conform-list {
+            list-style: none;
+        }
+    
+        &__conform-item {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            color: #B5B5B5;
+            margin-bottom: 30px;
+        }
+    
+        &__conform-icon {
+            margin-right: 30px;
+        }
+    
+        &__game-title {
+            padding-bottom: 7px;
+        }
+        &__game-list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            list-style: none;
+            padding-bottom: 37px;
+        }
+        &__game-link {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+            text-decoration: none;
+            padding: 20px 0;
+        }
+    
+        &__game-img {
+            margin-right: 39px;
+        }
+    
+        &__game-info {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+            flex-grow: 1;
+            flex-basis: 1;
+        }
+    
+        &__game-name {
+            padding-bottom: 3px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+    
+        }
+    
+        &__game-statistic {
+            display: flex;
+    
+        }
+    
+        &__statistic-item {
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            line-height: 13px;
+            margin-right: 31px;
+        }
+        &__statistic-icon{
+            
+        }
+        &__fighting-num {
+        }
+    
+        &__win-num {
+            color: #6BE795;
+        }
+    
+        &__lost-num {
+            color: #FB9191;
+        }
+    
+    }
+    
+}
+
