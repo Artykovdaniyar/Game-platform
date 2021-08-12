@@ -1,4 +1,5 @@
-.games {
+@media (max-width: 426px) {
+    .games {
     &__main{
         padding-bottom: 83px;
     }
@@ -60,4 +61,6 @@
         background: #0761DC;
         border-radius: 16px;
     }
+}
+
 }

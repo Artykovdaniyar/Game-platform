@@ -5,12 +5,17 @@
 @import "blocks/nav";
 @import "blocks/fighting";
 @import "blocks/customer";
-@import "blocks/profile.scss";
-@import "blocks/review.scss";
-@import "blocks/games.scss";
-@import "blocks/game.scss";
-@import "blocks/game-task.scss";
-@import "blocks/game2.scss";
+@import "blocks/profile";
+@import "blocks/review";
+@import "blocks/all-games";
+@import "blocks/game";
+@import "blocks/game-task";
+@import "blocks/game2";
+@import "blocks/game2";
+@import "blocks/my-fighting";
+@import "blocks/tabs.scss";
+
+
 *{
     margin: 0;
     padding: 0;

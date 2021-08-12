@@ -1,82 +1,86 @@
 @media (max-width: 426px) {
     .fighting {
-    &__main{
-        padding-bottom: 83px;
-    }
-    &__img {
-        display: block;
-        width: 100%;
-        height: auto;
-        object-fit: cover
-    }
-    &__container{
-        @include mobileContainer;
-    }
-    &__title {
-        padding: 20px 0 10px;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
-    }
-    &__info {
-        display: flex;
-        align-items: center;
-        font-size: 12px;
-        line-height: 14px;
-        padding-bottom: 18px;
-        @include borderBottom;
-    }
-
-    &__create-date {
-        color: #B5B5B5;
-        margin-right: 36px;
-    }
-
-    &__category {
-        color: #EB56C1;
-
-    }
-    &__descr {
-        padding: 25px 0 20px;
-        @include borderBottom;
-    }
-    &__descr-text{
-        padding-bottom: 28px;
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.01em;
-        color: #B5B5B5;
-    }
-    &__date,
-    &__bet,
-    &__format{
-        font-size: 14px;
-        line-height: 17px;
-        &:not(:last-child){
-            margin-bottom: 10px;
+        &__main{
+            padding-bottom: 83px;
         }
-    }
+        &__img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover
+        }
+        &__container{
+            @include mobileContainer;
+        }
+        &__title {
+            padding: 20px 0 10px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        &__info {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: 14px;
+            padding-bottom: 18px;
+            @include borderBottom;
+        }
 
-    &__date-time,
-    &__bet-price,
-    &__format-name {
-        font-size: 16px;
-        line-height: 19px;
-    }
-    &__bet-price{
-        color: $gold-color;
-    }
+        &__create-date {
+            color: #B5B5B5;
+            margin-right: 36px;
+        }
+
+        &__category {
+            color: #EB56C1;
+
+        }
+        &__descr {
+            padding: 25px 0 20px;
+            @include borderBottom;
+        }
+        &__descr-text{
+            padding-bottom: 28px;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.01em;
+            color: #B5B5B5;
+        }
+        &__date,
+        &__bet,
+        &__format{
+            font-size: 14px;
+            line-height: 17px;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+
+        &__date-time,
+        &__bet-price,
+        &__format-name {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__bet-price{
+            color: $gold-color;
+        }
 
 
-    &__info{
-        padding: 17px 0 25px;
-    }
-    &__respond-btn{
-        margin: 30px auto 38px;
+        &__info{
+            padding: 17px 0 25px;
+        }
+        &__respond-btn{
+            margin: 30px auto 38px;
+        }
+        &__customer{
+            padding-top: 35px;
+        }
+
     }
 
 }
-
 .similer-task {
     padding: 40px 0 0 ;
     &__heading {
@@ -84,7 +88,4 @@
         font-weight: 400;
         line-height: 14px;
     }
-}
-
-
 }

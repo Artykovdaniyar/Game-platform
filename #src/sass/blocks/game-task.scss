@@ -1,8 +1,7 @@
-.game-task {
-
+@media (max-width: 426px) {
+    .game-task {
     &__list {
         list-style: none;
-        padding: 0 20px;
     }
     &__item {
         &:not(:last-child){
@@ -52,4 +51,6 @@
         margin-bottom: 2px;
     }
     
+}
+
 }

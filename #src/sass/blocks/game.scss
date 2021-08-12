@@ -1,4 +1,5 @@
-.game {
+@media (max-width: 426px) {
+    .game {
     &__main{
         padding-bottom: 83px;
     }
@@ -55,3 +56,5 @@
     }
 }
 
+
+}

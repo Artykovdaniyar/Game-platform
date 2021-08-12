@@ -62,13 +62,25 @@
         &__bet-price {
             color: #FFB156;
         }
-    
+        &__status{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 21px;
+
+        }
+        &__status-icon{
+            margin-right: 11px;
+        }
         &__info {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             color: #949494;
-            padding-top: 17px;
+            padding: 17px 0 0;
             font-size: 12px;
             line-height: 14px;
         }

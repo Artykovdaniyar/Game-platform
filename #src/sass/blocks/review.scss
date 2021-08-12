@@ -1,4 +1,5 @@
-.review {
+@media (max-width: 426px) {
+    .review {
     &__main{
         padding-bottom: 83px;
     }
@@ -74,3 +75,5 @@
     }
 }
 
+
+}
