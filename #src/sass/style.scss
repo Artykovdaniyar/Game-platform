@@ -12,8 +12,10 @@
 @import "blocks/game-task";
 @import "blocks/game2";
 @import "blocks/game2";
-@import "blocks/my-fighting";
-@import "blocks/tabs.scss";
+@import "blocks/myfighting-all";
+@import "blocks/myfighting-canceled";
+@import "blocks/tabs";
+@import "blocks/myfighting-completed.scss";
 
 
 *{
@@ -41,7 +43,7 @@ picture{
     border-radius: 16px;
 }
 .page__header{
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +54,7 @@ picture{
     line-height: 24px;
     background-color: #111A23;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    z-index: 2;
 }
 .btn__back {
     position: absolute;
@@ -93,7 +96,8 @@ picture{
     color: #B5B5B5;
 }
 .page__container{
-    @include mobileContainer;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 .block__title{
     font-weight: 400;
@@ -104,6 +108,6 @@ picture{
 .border__bottom{
     @include borderBottom;
 }
-.main{
+.page__main{
     padding: 64px 0 83px 0;
 }

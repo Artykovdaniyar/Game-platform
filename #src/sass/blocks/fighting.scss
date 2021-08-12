@@ -10,7 +10,7 @@
             object-fit: cover
         }
         &__container{
-            @include mobileContainer;
+            padding: 0 20px 38px;
         }
         &__title {
             padding: 20px 0 10px;
@@ -49,7 +49,8 @@
         }
         &__date,
         &__bet,
-        &__format{
+        &__format,
+        &__status {
             font-size: 14px;
             line-height: 17px;
             &:not(:last-child){
@@ -59,26 +60,125 @@
 
         &__date-time,
         &__bet-price,
-        &__format-name {
+        &__format-name,
+        &__status-state{
             font-size: 16px;
             line-height: 19px;
         }
         &__bet-price{
             color: $gold-color;
         }
-
-
+        &__status-state--canceled{
+            color: #FB9191; 
+        }
+        &__status-state--complited{
+            color: #6BE795;
+        }
+        &__status-state--waitting{
+            color: #FF7A00;
+        }
         &__info{
             padding: 17px 0 25px;
         }
         &__respond-btn{
-            margin: 30px auto 38px;
+            margin: 30px auto 0;
         }
         &__customer{
             padding-top: 35px;
         }
 
+
+
+        
+        &__desk {
+            padding-top: 40px;
+        }
+    
+        &__desk-wrapper {
+            position: relative;
+            margin-top: 18px;
+            min-height: 133px;
+        }
+    
+        &__desk-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px;
+            width: calc(50% - 22px);
+            height: 42px;
+            font-size: 11px;
+            color: white;
+            line-height: 14px;
+            background: #272F37;
+            border-radius: 2px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -21px;
+                display: block;
+                width: 21px;
+                height: 1px;
+                background-color: #272F37;
+                transform: translateY(-50%);
+
+            }
+        }
+    
+        &__desk-item1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        &__desk-item--winner {
+            background: #5EA2FF;
+        }
+    
+        &__desk-score {
+        }
+    
+        &__desk-item2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    
+        &__desk-winner {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            &::before{
+                top: 50%;
+                left: -21px;
+                width: 21px;
+                height: 1px;
+                transform: translateY(-50%);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: calc(0% - 22px);
+                display: block;
+                width: 1px;
+                height: 220%;
+                background-color: #272F37;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &__desk-winner-icon{
+            position: absolute;
+            top: -9px;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+
     }
+    
+
 
 }
 .similer-task {
@@ -89,3 +189,4 @@
         line-height: 14px;
     }
 }
+

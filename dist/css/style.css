@@ -8,6 +8,10 @@
   line-height: 14px;
 }
 
+.my-fighting__main {
+  padding-bottom: 83px;
+}
+
 .my-fighting__background {
   position: absolute;
   top: 50%;
@@ -119,7 +123,7 @@ picture {
 }
 
 .page__header {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,6 +141,7 @@ picture {
   background-color: #111A23;
   -webkit-box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 
 .btn__back {
@@ -193,7 +198,8 @@ picture {
 }
 
 .page__container {
-  padding: 0px 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .block__title {
@@ -207,7 +213,7 @@ picture {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.main {
+.page__main {
   padding: 64px 0 83px 0;
 }
 
@@ -486,7 +492,7 @@ picture {
   }
 
   .fighting__container {
-    padding: 0px 20px;
+    padding: 0 20px 38px;
   }
 
   .fighting__title {
@@ -533,20 +539,23 @@ picture {
 
   .fighting__date,
   .fighting__bet,
-  .fighting__format {
+  .fighting__format,
+  .fighting__status {
     font-size: 14px;
     line-height: 17px;
   }
 
   .fighting__date:not(:last-child),
   .fighting__bet:not(:last-child),
-  .fighting__format:not(:last-child) {
+  .fighting__format:not(:last-child),
+  .fighting__status:not(:last-child) {
     margin-bottom: 10px;
   }
 
   .fighting__date-time,
   .fighting__bet-price,
-  .fighting__format-name {
+  .fighting__format-name,
+  .fighting__status-state {
     font-size: 16px;
     line-height: 19px;
   }
@@ -555,16 +564,130 @@ picture {
     color: #FFB156;
   }
 
+  .fighting__status-state--canceled {
+    color: #FB9191;
+  }
+
+  .fighting__status-state--complited {
+    color: #6BE795;
+  }
+
+  .fighting__status-state--waitting {
+    color: #FF7A00;
+  }
+
   .fighting__info {
     padding: 17px 0 25px;
   }
 
   .fighting__respond-btn {
-    margin: 30px auto 38px;
+    margin: 30px auto 0;
   }
 
   .fighting__customer {
     padding-top: 35px;
+  }
+
+  .fighting__desk {
+    padding-top: 40px;
+  }
+
+  .fighting__desk-wrapper {
+    position: relative;
+    margin-top: 18px;
+    min-height: 133px;
+  }
+
+  .fighting__desk-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 14px;
+    width: calc(50% - 22px);
+    height: 42px;
+    font-size: 11px;
+    color: white;
+    line-height: 14px;
+    background: #272F37;
+    border-radius: 2px;
+  }
+
+  .fighting__desk-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -21px;
+    display: block;
+    width: 21px;
+    height: 1px;
+    background-color: #272F37;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .fighting__desk-item1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .fighting__desk-item--winner {
+    background: #5EA2FF;
+  }
+
+  .fighting__desk-item2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .fighting__desk-winner {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .fighting__desk-winner::before {
+    top: 50%;
+    left: -21px;
+    width: 21px;
+    height: 1px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .fighting__desk-winner::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(0% - 22px);
+    display: block;
+    width: 1px;
+    height: 220%;
+    background-color: #272F37;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .fighting__desk-winner-icon {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
   }
 
   .customer {
