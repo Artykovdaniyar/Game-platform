@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Создание сражения</title>
+</head>
+<body>
+
+        <header class="page__header">
+            Создание сражения
+            <a href="../index.html" class="btn__back">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </a>
+        </header>
+        <main class="page__main">
+            <section class="create-fighting page__container">
+                <form action="" class="create-fighting__form" id="create-fighting__form">
+                    <label class="create-fighting__form-label" for="create-fighting__heading-input block__title">Заголовок</label>
+                    <input class="create-fighting__heading-input" id="create-fighting__heading-input" type="text" placeholder="Введите заголовок">
+                    
+                    <label class="create-fighting__form-label" for="create-fighting__descr-input block__title">Описание</la>
+                    <textarea class="create-fighting__descr-input" id="create-fighting__descr-input" type="textarea" placeholder="Введите описание"></textarea>
+                    
+                    <label class="create-fighting__form-label" for="create-fighting__bet-input block__title">Ставка</label>
+                    <input class="create-fighting__bet-input" id="create-fighting__bet-input" type="text" placeholder="Сумма ставки">
+                
+                    <label class="create-fighting__form-label" for="create-fighting__datetime-input block__title">Дата и время</label>
+                    <input class="create-fighting__date-input" id="create-fighting__datetime-input" type="text" placeholder="Дата игры">
+                    <input class="create-fighting__time-input" id="create-fighting__datetime-input" type="text" placeholder="Время игры">
+                        
+                    <a href="./create-fighting_format.html" class="create-fighting__next-btn btn__blue" type="submit">Далее</a>
+
+                </form>
+
+            </section>
+        </main>
+        
+        <footer>
+            @@include('../html/nav.html')
+        </footer>
+        <script src="../js/create-fighting_form.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@ let path={
         html: [source_folder+ "/**/*.html", "!" + source_folder+ "/_*.html"],
         cssCopy: source_folder+ "/css/*.css",
         css: source_folder+ "/sass/style.scss",
-        js: source_folder+ "/js/*.js",
+        js: source_folder+ "/js/**/*.js",
         img: source_folder+ "/img/**/*.{png,jpg,svg,gif,ico,webp}",
         icons: source_folder+ "/icons/**/*.{png,jpg,svg,gif,ico,webp}",
         fonts: source_folder+ "/fonts/*.ttf",

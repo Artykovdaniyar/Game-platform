@@ -1,5 +1,5 @@
 {
-  "name": "Dota",
+  "name": "Game platform",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,11 +7,22 @@
   },
   "author": "Daniiar",
   "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "not dead"
+  ],
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.13",
+    "core-js": "^3.4.2",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.2.2",
     "gulp-fonter": "^0.3.0",
@@ -26,7 +37,9 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
-    "gulp-webpcss": "^1.1.1"
+    "gulp-webpcss": "^1.1.1",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
   "dependencies": {},
   "description": "Orale project"

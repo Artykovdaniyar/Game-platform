@@ -54,5 +54,5 @@ tabBtn1.addEventListener("click", function(){
     tabContent1.classList.add("active")
     tabContent2.classList.remove("active")
 });
-
+console.log(tabBtn2)
 

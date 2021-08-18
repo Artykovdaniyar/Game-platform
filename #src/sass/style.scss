@@ -15,8 +15,9 @@
 @import "blocks/myfighting-all";
 @import "blocks/myfighting-canceled";
 @import "blocks/tabs";
-@import "blocks/myfighting-completed.scss";
-
+@import "blocks/myfighting-completed";
+@import "blocks/create-fighting";
+@import "blocks/balanceup.scss";
 
 *{
     margin: 0;
@@ -41,6 +42,9 @@ picture{
     background: #0761DC;
     border: none;
     border-radius: 16px;
+    &:active{
+        background: red;
+    }
 }
 .page__header{
     position: fixed;
@@ -110,4 +114,11 @@ picture{
 }
 .page__main{
     padding: 64px 0 83px 0;
+}
+.invalid__input{
+    border: 2px solid red;
+}
+
+.valid__input{
+    border: 2px solid green;
 }
