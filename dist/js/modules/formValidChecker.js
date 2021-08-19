@@ -1,18 +1,1 @@
-const formValidChecker = input => {
-    input.addEventListener("click", function(){
-        alert(1)
-    })
-    input.addEventListener("focusout", function(){
-        if(input.value == ""){
-            input.classList.add("invalid__input")
-        }
-    });
-
-    input.addEventListener("focusin", function(){
-        input.classList.remove("invalid__input")
-
-    });
-    console.log("It works!")
-
-}
-export default formValidChecker;
+const formValidChecker=e=>{e.addEventListener("click",(function(){alert(1)})),e.addEventListener("focusout",(function(){""==e.value&&e.classList.add("invalid__input")})),e.addEventListener("focusin",(function(){e.classList.remove("invalid__input")})),console.log("It works!")};export default formValidChecker;

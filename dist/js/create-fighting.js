@@ -1,11 +1,1 @@
-let games = document.querySelectorAll(".create-fighting__game");
-
-games.forEach(game =>{
-
-    game.addEventListener("click", function(e){
-        games.forEach(game => {
-            game.classList.remove("create-fighting__game--checked");
-        })
-        this.classList.toggle("create-fighting__game--checked");
-    });
-});
+let games=document.querySelectorAll(".create-fighting__game");games.forEach(e=>{e.addEventListener("click",(function(e){games.forEach(e=>{e.classList.remove("create-fighting__game--checked")}),this.classList.toggle("create-fighting__game--checked")}))});

@@ -170,7 +170,7 @@
                 display: block;
                 width: 1px;
                 height: 220%;
-                background-color: $black;
+                background-color: $black-color;
                 transform: translate(-50%, -50%);
             }
         }
@@ -201,7 +201,7 @@
             border: none;
             background: #1E2B39;
             &:active{
-                color: $black;
+                color: $black-color;
                 background: white;
             }
         }

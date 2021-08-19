@@ -2,7 +2,16 @@ const   cardNum = document.querySelector(".balance-up__card-num"),
         cardMonth = document.querySelector(".balance-up__card-month"),
         cardYear = document.querySelector(".balance-up__card-year"),
         cardCvc = document.querySelector(".balance-up__card-cvc"),
-        topUpSum = document.querySelector(".balance-up__sum");
+        topUpSum = document.querySelector(".balance-up__sum"),
+        topUpBtn = document.querySelector(".balance-up__btn"),
+        allInputs = document.querySelectorAll("input"),
+        topUpPopup = document.querySelector(".balance-up__popup"),
+        popupWrapper = document.querySelector(".popup");
+
+
+
+        
+
 
 cardNum.addEventListener("input", function(e){
 
@@ -14,14 +23,15 @@ cardNum.addEventListener("input", function(e){
 });
 
 
-
-
 cardYear.addEventListener("input", function(e){
     if(cardYear.value <= "20"){
+        cardYear.classList.remove("valid__input")
         cardYear.classList.add("invalid__input");
 
     }else if(cardYear.validity.valid == true){
+        cardYear.classList.remove("invalid__input");
         cardYear.classList.add("valid__input")
+
     }
 
 });
@@ -32,6 +42,7 @@ cardYear.addEventListener("input", function(e){
 function validChecer(input){
     input.addEventListener("keydown", function(){
         if(input.validity.valid == true){
+            input.classList.remove("invalid__input");
             input.classList.add("valid__input")
         }
     })
@@ -42,7 +53,6 @@ function inputValueChecker(input){
         if(input.value.trim() == "" || input.value.trim() == 0){
             input.classList.remove("valid__input")
             input.classList.add("invalid__input");
-
         }
     })
 }
@@ -65,14 +75,16 @@ inputValueChecker(topUpSum)
 
 
 
-
-
-
-// cardCvc.addEventListener("keydown", function(){
-//     if(cardCvc.validity.valid == true){
-//         cardCvc.classList.add("valid__input")
-//     }
-
-// })
+topUpBtn.addEventListener("click", (e) => {
+    allInputs.forEach(input => {
+        if(input.classList.contains("invalid__input")){
+            e.preventDefault()
+        }else if(input.classList.contains("valid__input")){
+            e.preventDefault()
+            topUpPopup.style.display = "flex"
+            topUpPopup.classList.add("animate__bounceInDown")
+        }
+    });
+})
 
 

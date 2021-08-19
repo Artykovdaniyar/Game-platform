@@ -9,7 +9,7 @@
         width: 100%;
         min-height: 83px;
     
-        background-color: $black;
+        background-color: $black-color;
         &__btn {
             display: flex;
             flex-direction: column;
@@ -24,11 +24,11 @@
             cursor: pointer;
             transition: 0.1s all;
             &:active{
-                color: $black;
+                color: $black-color;
                 background-color: white;
             }
             &:active > svg{
-                fill: $black;
+                fill: $black-color;
             }
         }
     

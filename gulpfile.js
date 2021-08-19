@@ -108,11 +108,11 @@ let {src, dest} = require('gulp'),
             .pipe(fileinclude())
             .pipe(dest(path.build.js))
             .pipe(uglify())
-            .pipe(
-                rename({
-                    extname: ".min.js"
-                })
-            )
+            // .pipe(
+            //     rename({
+            //         extname: ".min.js"
+            //     })
+            // )
             .pipe(dest(path.build.js)) 
             .pipe(browsersync.stream())
     }

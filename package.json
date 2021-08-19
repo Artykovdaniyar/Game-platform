@@ -41,6 +41,8 @@
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
   "description": "Orale project"
 }

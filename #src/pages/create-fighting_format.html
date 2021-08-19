@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
         <main class="page__main">
             <section class="create-fighting page__container">
                 <form class="create-fighting__form" id="create-fighting__form" novalidate>
-                    <label class="create-fighting__form-label  block__title" for="create-fighting__format-input block__title">Формат игры</label>
+                    <label class="create-fighting__form-label  block__title" for="create-fighting__format-input">Формат игры</label>
                     <input autocomplete="off" class="create-fighting__format-input" id="create-fighting__format-input" type="text" placeholder="Выберите формат игры">
                     <div class="create-fighting__format-menu">
                         <ul class="create-fighting__format-list"> 
@@ -32,7 +32,7 @@
                         </ul>
                     </div>
                     <div class="create-fighting__crew-wrapper">
-                    <label class="create-fighting__form-label block__title" for="create-fighting__crew-input block__title">Команда</label>
+                    <label class="create-fighting__form-label block__title" for="create-fighting__crew-input">Команда</label>
                     <input autocomplete="off" class="create-fighting__crew-input" id="create-fighting__crew-input" type="text" placeholder="Введите название команды">
                     </div>
                     
@@ -73,6 +73,7 @@
         <footer>
             @@include('../html/nav.html')
         </footer>
+        <script src="../js/header-slider.js"></script>
         <script src="../js/create-fighting_format.js"></script>
 </body>
 </html>

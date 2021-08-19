@@ -9,7 +9,7 @@
         width: 100%;
         min-height: 64px;
         overflow: hidden;
-        background-color: $black;
+        background-color: $black-color;
         padding: 0;
         &--fixed{
             position: fixed;
@@ -30,7 +30,7 @@
                 background-color: white;
             }
             &:active > svg{
-                fill: $black;
+                fill: $black-color;
             }
         }
         &__icons{
