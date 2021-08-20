@@ -1,5 +1,5 @@
 {
-  "name": "Game platform",
+  "name": "gameplatform",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,6 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.13",
     "core-js": "^3.4.2",
     "del": "^6.0.0",
@@ -37,9 +34,7 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
-    "gulp-webpcss": "^1.1.1",
-    "webpack": "^4.41.2",
-    "webpack-stream": "^5.2.1"
+    "gulp-webpcss": "^1.1.1"
   },
   "dependencies": {
     "animate.css": "^4.1.1"

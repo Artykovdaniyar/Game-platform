@@ -30,7 +30,7 @@
             align-items: flex-start;
         }
     
-        &__user-img {
+        &__img {
             width: 42px;
             height: 42px;
             border-radius: 16px;
@@ -79,6 +79,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            flex-wrap: wrap;
             color: #949494;
             padding: 17px 0 0;
             font-size: 12px;
@@ -106,6 +107,16 @@
         &__offers-num {
             padding-right: 3px;
         }
+    }
+}
+
+@media (max-width: 321px) {
+    .task {
+    
+        &__offers{
+            margin-top: 10px;
+        }
+
     }
 }
 

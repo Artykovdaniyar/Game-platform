@@ -370,7 +370,7 @@
             @include borderBottom;
 		}
 
-		&__choose-price-num {
+		&__choose-price-sum {
             font-weight: 600;
             color: #FFB156;
 		}
@@ -437,6 +437,146 @@
         &__public-btn{
             margin-top: 82px;
         }
+        &__members {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px
+        }
+        &__members-icon{
+            transition: .2s all;
+            &.opened{
+                transform: rotate(180deg);
+            }
+        }
+    
+        &__members-list {
+            display: block;
+            list-style: none;
+            overflow: hidden;
+            height: 0;
+            &.opened{
+                height: fit-content;
+            }
+        }
+    
+    
+        &__members-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            min-height: 42px;
+            margin-top: 10px;
+            &:first-child{
+                margin-top: 20px;
+            }
+        }
+        &__members-link{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            min-height: 42px;
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+    
+        }
+    
+        &__members-img {
+            margin-right: 15px;
+        }
+    
+        &__members-names {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    
+        &__members-firstname {
+            position: relative;
+            margin-right: 23px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -11.5px;
+                transform: translate(-50%, -50%);
+                width: 2.5px;
+                height: 2.5px;
+                border-radius: 50%;
+                background: white;
+            }
+        }
+    
+        &__members-lastname {
+        }
+    
+        &__members-capicon {
+            margin-left: auto;
+        }
+
+
+
+
+
+        &__response {
+            padding: 30px 0;
+        }
+    
+        &__response-form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__response-label {
+        }
+    
+        &__response-textarea {
+            display: block;
+            width: 100%;
+            min-height: 110px;
+            height: fit-content;
+            resize: vertical;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: left;
+            color: white;
+            background: #272F37;
+            margin-top: 10px;
+            padding: 17px 20px;
+            border: none;
+            border-radius: 16px;
+            &::placeholder{
+                font-family: "SF Pro Display", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #535C65;
+                text-align: left;
+            }
+        }
+    
+        &__response-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            @include borderBottom;
+        }
+    
+        &__response-price-sum {
+            font-weight: 600;
+            color: #FFB156;
+        }
+        &__response-btn{
+            margin-top: 193px;
+        }
     }
 
 
@@ -451,87 +591,5 @@
     }
 }
 
-.fighting {
-    &__members {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px
-    }
-    &__members-icon{
-        transition: .2s all;
-        &.opened{
-            transform: rotate(180deg);
-        }
-    }
-
-    &__members-list {
-        display: block;
-        list-style: none;
-        overflow: hidden;
-        height: 0;
-        &.opened{
-            height: fit-content;
-        }
-    }
 
 
-    &__members-item {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        min-height: 42px;
-        margin-top: 10px;
-        &:first-child{
-            margin-top: 20px;
-        }
-    }
-    &__members-link{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        min-height: 42px;
-        margin-top: 10px;
-        color: white;
-        text-decoration: none;
-
-    }
-
-    &__members-img {
-        margin-right: 15px;
-    }
-
-    &__members-names {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-    }
-
-    &__members-firstname {
-        position: relative;
-        margin-right: 23px;
-        &::before{
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: -11.5px;
-            transform: translate(-50%, -50%);
-            width: 2.5px;
-            height: 2.5px;
-            border-radius: 50%;
-            background: white;
-        }
-    }
-
-    &__members-lastname {
-    }
-
-    &__members-capicon {
-        margin-left: auto;
-    }
-}

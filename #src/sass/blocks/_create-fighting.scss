@@ -1,4 +1,6 @@
 .create-fighting {
+    // Game List
+    //===========================================
     display: flex;
     flex-direction: column;
     padding: 20px 0 75px;
@@ -14,8 +16,9 @@
         align-items: center;
         padding: 10px 20px;
         width: 100%;
+        transition: .2s background ease-in-out;
     }
-    &__game--checked{
+    &__game_checked{
         background: #1E2B39;
     }
 
@@ -30,30 +33,18 @@
         color: #FFFFFF;
     }
     &__next-btn{
-        margin-top: 40px !important;
+        margin-top: 40px ;
     }
-}
-.create-fighting {
 
+
+    
+    // Finghting Form
+    //===========================================
     &__form {
     }
     &__form-label{
         display: block;
         margin-top: 25px;
-    }
-
-    &__heading-input {
-    }
-
-
-    &__bet-input {
-    }
-
-    &__date-input {
-    }
-
-    &__time-input {
-
     }
 
     &__heading-input,
@@ -89,22 +80,26 @@
             color: #535C65;
         }
         &:invalid{
-            color: #834141;
+            border: 2px solid red;
         }
-        &.invalid{
-            border: 1px solid red;
-        }
+
     }
     &__descr-input{
         resize: vertical;
         min-height: 110px;
     }
+     // Finghting Form
+     //===========================================
     &__crew-wrapper{
         display: none;
     }
     &__crew-wrapper.active{
         display: block;
     }
+}
+.create-fighting {
+
+
 
 
 

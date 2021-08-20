@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Выбор исполнителя</title>
+</head>
+<body>
+
+        <header class="fighting__header page__header">
+            Выбор исполнителя
+            <button class="btn__back">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </button>
+        </header>
+        <main class="page__main">
+            <section class="fighting__response  page__container">
+                <form class="fighting__response-form">
+                    <label for="fighting__response-textarea" class="fighting__response-label block">Текст отклика</label>
+                    <textarea name="response-text" class="fighting__response-textarea" id="fighting__response-textarea" placeholder="Расскажите почему именно вы должны сражаться"></textarea>
+                    <div class="fighting__response-price">
+                        Стоимость сражения: <span class="fighting__response-price-sum">3000 сом</span>
+                    </div>
+                    
+                    <a href="fighting_response_form_team.html" class="fighting__response-btn btn__blue">Откликнуться</a>
+                </form>
+                <div class="balance">
+                    <a href="../pages/balanceup.html" class="balance__btn">Пополнить баланс</a>
+                    <p class="balance__text">На вашем балансе недостаточно средств для создания сражения</p>
+                    <div class="balance__wrapper">
+                        <svg class="balance__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.00033 17.3334C4.39783 17.3334 0.666992 13.6025 0.666992 9.00002C0.666992 4.39752 4.39783 0.666687 9.00033 0.666687C13.6028 0.666687 17.3337 4.39752 17.3337 9.00002C17.3337 13.6025 13.6028 17.3334 9.00033 17.3334ZM9.00033 5.46419L5.46449 9.00002L9.00033 12.5359L12.5362 9.00002L9.00033 5.46419Z" fill="#FFBB3D"/>
+                        </svg>
+                        <span class="balance__status">Ваш баланс <span class="balance__num">750</span> сом</span>
+                    </div>
+                </div>
+            </section>  
+
+        </main>
+        
+        <footer>
+            @@include('../html/nav.html')
+        </footer>
+        <script src="../js/header-slider.js"></script>
+        
+</body>
+</html>

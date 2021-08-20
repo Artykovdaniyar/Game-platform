@@ -1,1 +1,9 @@
-const teamOpenTrigger=document.querySelector(".fighting__members"),teatList=document.querySelector(".fighting__members-list"),teamIcon=document.querySelector(".fighting__members-icon");teamOpenTrigger.addEventListener("click",(function(){teatList.classList.toggle("opened"),teamIcon.classList.toggle("opened")}));
+const   topUpPopup = document.querySelector(".fighting-public__popup"),
+        publicBtn = document.querySelector(".fighting__public-btn");
+
+publicBtn.addEventListener("click", (e) => {
+    e.preventDefault()
+    topUpPopup.style.display = "flex"
+    topUpPopup.classList.add("animate__bounceInDown")
+
+})

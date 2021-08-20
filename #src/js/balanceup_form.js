@@ -5,8 +5,7 @@ const   cardNum = document.querySelector(".balance-up__card-num"),
         topUpSum = document.querySelector(".balance-up__sum"),
         topUpBtn = document.querySelector(".balance-up__btn"),
         allInputs = document.querySelectorAll("input"),
-        topUpPopup = document.querySelector(".balance-up__popup"),
-        popupWrapper = document.querySelector(".popup");
+        topUpPopup = document.querySelector(".balance-up__popup");
 
 
 

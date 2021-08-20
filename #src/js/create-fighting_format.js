@@ -92,10 +92,11 @@ function addPlayerRender(){
     `
     playerList.appendChild(addPlayerItem);
 }
+
 function removeAddPlayer(){
-    let addPlayerItems = document.getElementsByClassName("create-fighting__addplayer");
+    let addPlayerItems = document.querySelectorAll(".create-fighting__addplayer");
     for(item of addPlayerItems){
-        item.style.display = "none"
+        item.remove()
     }
 }
 

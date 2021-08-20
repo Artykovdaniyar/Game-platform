@@ -48,7 +48,8 @@ let {src, dest} = require('gulp'),
     webphtml = require('gulp-webp-html'),
     webpCss = require('gulp-webp-css'),
     ttf2woff = require('gulp-ttf2woff'),
-    ttf2woff2 = require('gulp-ttf2woff2');
+    ttf2woff2 = require('gulp-ttf2woff2'),
+    babel = require('gulp-babel');
 
     function browserSync(params){
         browsersync.init({
@@ -108,11 +109,11 @@ let {src, dest} = require('gulp'),
             .pipe(fileinclude())
             .pipe(dest(path.build.js))
             .pipe(uglify())
-            // .pipe(
-            //     rename({
-            //         extname: ".min.js"
-            //     })
-            // )
+            .pipe(
+                rename({
+                    extname: ".min.js"
+                })
+            )
             .pipe(dest(path.build.js)) 
             .pipe(browsersync.stream())
     }

@@ -6,6 +6,7 @@
 @import "blocks/header";
 @import "blocks/task";
 @import "blocks/nav";
+@import "blocks/side-menu";
 @import "blocks/fighting";
 @import "blocks/customer";
 @import "blocks/profile";
@@ -23,6 +24,7 @@
 @import "blocks/balanceup";
 @import "blocks/popup";
 @import "base/anime-css";
+@import "blocks/balance";
 *{
     margin: 0;
     padding: 0;
@@ -33,6 +35,10 @@ body{
     background-color: $black-color;
     color: white;
     overflow-x: hidden;
+
+}
+.noscroll{
+    overflow-y: hidden;
 }
 picture{
     font-size: 0;
