@@ -7,11 +7,16 @@ const inputs = Array.from(document.querySelectorAll("input"));
 inputs.push(textarea);
 
 import headerMobileAnimetion from "./modules/headerMobileAnimetion.js"
+import goPreviousPage from "./modules/goPreviousPage.js"
+headerMobileAnimetion();
+goPreviousPage();
+
+
+
 import ValidNumChecker from "./modules/ValidNumChecker.js"
 import formValidChecker from "./modules/formValidChecker.js";
 
 
-headerMobileAnimetion();
 
 
 

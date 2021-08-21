@@ -6,10 +6,16 @@ const formatItems = document.querySelectorAll(".create-fighting__format-item");
 const nextBtn = document.querySelector(".create-fighting__next-btn");
 const crewWrapper = document.querySelector(".create-fighting__crew-wrapper");
 let playerList = document.querySelector(".create-fighting__player-list");
-let balance = 750;
+let balance = 2750;
 let betPrice = 1000; 
 const balanceInfo =  document.querySelector(".create-fighting__balance")
 
+import headerMobileAnimetion from "./modules/headerMobileAnimetion.js";
+import goPreviousPage from "./modules/goPreviousPage.js";
+
+
+headerMobileAnimetion();
+goPreviousPage();
 
 formatInput.addEventListener("input", function(){
     this.value.trim()
@@ -61,29 +67,32 @@ formatInput.addEventListener("click", function(){
     formatMenu.classList.toggle("active");
     formatInput.classList.remove("invalid__input");
 });
-nextBtn.addEventListener("click", function(e){
 
+nextBtn.addEventListener("click", function(e){
     if(formatInput.value == ""){
         e.preventDefault();
         formatInput.classList.add("invalid__input");
-
-    }else if(crewInput.value == ""){
+    }else if(formatInput.value != "1x1" && crewInput.value == ""){
         e.preventDefault();
         crewInput.classList.add("invalid__input");
     }else if(balance < betPrice){
         e.preventDefault();
         balanceInfo.style.display = "flex"
-
     }
 });
 crewInput.addEventListener("click", function(){
     crewInput.classList.remove("invalid__input");
 })
+
+
+
+
+
 function addPlayerRender(){
     let addPlayerItem = document.createElement("li");
     addPlayerItem.classList.add("create-fighting__addplayer");
     addPlayerItem.innerHTML = `
-    <a href="#" class="create-fighting__addplayer-link">
+    <a href="../pages/search-player.html" class="create-fighting__addplayer-link">
         <span class="create-fighting__addplayer-title">Добавить игрока</span>
         <svg class="create-fighting__addplayer-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 6V0H8V6H14V8H8V14H6V8H0V6H6Z" fill="#535C65"/>
@@ -95,8 +104,8 @@ function addPlayerRender(){
 
 function removeAddPlayer(){
     let addPlayerItems = document.querySelectorAll(".create-fighting__addplayer");
-    for(item of addPlayerItems){
+    addPlayerItems.forEach(item => {
         item.remove()
-    }
+    })
 }
 

@@ -1,10 +1,4 @@
-import tabs from "./modules/tabs.js"
-
-
-window.addEventListener("DOMContentLoaded", () => {
-    tabs()
-
-})
-
-
-
+import goPreviousPage from "./modules/goPreviousPage.js"
+import headerMobileAnimetion from "./modules/headerMobileAnimetion.js"
+goPreviousPage()
+headerMobileAnimetion()

@@ -17,14 +17,21 @@
 @import "blocks/game2";
 @import "blocks/game2";
 @import "blocks/myfighting-all";
-@import "blocks/myfighting-canceled";
 @import "blocks/tabs";
-@import "blocks/myfighting-completed";
 @import "blocks/create-fighting";
 @import "blocks/balanceup";
 @import "blocks/popup";
 @import "base/anime-css";
 @import "blocks/balance";
+@import "blocks/search-player";
+@import "blocks/player-list";
+@import "blocks/notification";
+@import "blocks/background-info";
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;

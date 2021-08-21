@@ -1,0 +1,20 @@
+.background-info{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    transform: translate(-50%, -50%);
+    &__text{
+        margin-top: 50px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #414950;
+    }
+}

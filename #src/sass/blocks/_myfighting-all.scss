@@ -1,10 +1,9 @@
-
 .my-fighting {
     &__main{
         padding-bottom: 83px;
     }
     &__background {
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         display: flex;

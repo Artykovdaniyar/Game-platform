@@ -1,4 +1,4 @@
-@media (max-width: 426px) {
+
     .side-menu.active{
         left: 0;
     }
@@ -10,8 +10,7 @@
         height: 100vh;
         padding: 64px 0 54px;
         z-index: 3;
-        background: linear-gradient(180deg, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.png);
-        overflow-y: scroll;
+        background: linear-gradient(180deg, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100% / cover no-repeat;
         transition: .5s left;
         &__user {
             display: flex;
@@ -133,10 +132,10 @@
         }
     }
     
-}
 
 
-@media (max-width: 321px) {
+
+@media (min-width: 426) {
     .side-menu {
         width: 100%;
     }

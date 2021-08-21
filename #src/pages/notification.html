@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Уведомления</title>
+</head>
+<body>
+
+        <header class="page__header">
+            Уведомления
+            <button class="btn__back">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </button>
+        </header>
+        <main class="page__main">
+            <div class="page__container">
+                <section class="notification">
+
+                <!-- <div class="background-info">
+                    <svg width="118" height="124" viewBox="0 0 118 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M105.666 88.1667H117.333V99.8334H0.666016V88.1667H12.3327V47.3334C12.3327 34.9566 17.2493 23.0867 26.001 14.335C34.7527 5.58334 46.6226 0.666687 58.9994 0.666687C71.3761 0.666687 83.246 5.58334 91.9977 14.335C100.749 23.0867 105.666 34.9566 105.666 47.3334V88.1667ZM41.4994 111.5H76.4994V123.167H41.4994V111.5Z" fill="#414950"/>
+                    </svg>
+                    <p class="background-info__text">Вы пока не участвовали в сражениях</p>
+                </div> -->
+
+                    <ul class="notification__list">
+                        <li class="notification__item">
+                            <a href="../pages/myprofile.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.1015e-06 10C8.1015e-06 4.477 4.47701 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20H8.1015e-06L2.92901 17.071C1.99904 16.1434 1.26154 15.0413 0.758889 13.8278C0.256234 12.6143 -0.00166634 11.3135 8.1015e-06 10ZM4.82801 18H10C11.5823 18 13.129 17.5308 14.4446 16.6518C15.7602 15.7727 16.7855 14.5233 17.391 13.0615C17.9965 11.5997 18.155 9.99113 17.8463 8.43928C17.5376 6.88743 16.7757 5.46197 15.6569 4.34315C14.538 3.22433 13.1126 2.4624 11.5607 2.15372C10.0089 1.84504 8.40035 2.00346 6.93854 2.60896C5.47673 3.21447 4.2273 4.23984 3.34825 5.55544C2.4692 6.87103 2.00001 8.41775 2.00001 10C2.00001 12.152 2.85101 14.165 4.34301 15.657L5.75701 17.071L4.82801 18ZM6.00001 11H14C14 12.0609 13.5786 13.0783 12.8284 13.8284C12.0783 14.5786 11.0609 15 10 15C8.93914 15 7.92173 14.5786 7.17158 13.8284C6.42144 13.0783 6.00001 12.0609 6.00001 11Z" fill="white"/>
+                                    </svg>    
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Комментарий</h3>
+                                    <h4 class="notification__subtitle">Айбек Е.  оставил комментарий у вас в профиле</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notification__item">
+                            <a href="../pages/choose-executor.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
+                                    </svg>    
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Комментарий</h3>
+                                    <h4 class="notification__subtitle">Сражение создано</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notification__item">
+                            <a href="../pages/myfighting-completed.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
+                                    </svg>    
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Сражение завершено</h3>
+                                    <h4 class="notification__subtitle">Сражение между Вами и Айбек. Е завершилось</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notification__item">
+                            <a href="../pages/myfighting-waitting.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
+                                    </svg>    
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Сражение началось</h3>
+                                    <h4 class="notification__subtitle">Сражение между Вами и Айбек. Е началось</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notification__item">
+                            <a href="#" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 5.757L5.757 10L10 14.243L14.243 10L10 5.757Z" fill="white"/>
+                                    </svg>    
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Баланс пополнен</h3>
+                                    <h4 class="notification__subtitle">Баланс пополнен на 1000 сом</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notification__item">
+                            <a href="../pages/myfighting-canceled.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
+                                    </svg>   
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Сражение отменено</h3>
+                                    <h4 class="notification__subtitle">Сражение №124124214 отменено</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notification__item">
+                            <a href="../pages/myfighting-canceled.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
+                                    </svg>   
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Сражение отменено</h3>
+                                    <h4 class="notification__subtitle">Сражение №124124214 отменено</h4>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li class="notification__item">
+                            <a href="../pages/myfighting-myorder.html" class="notification__link">
+                                <div class="notification__icon-wrapper">
+                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
+                                    </svg>   
+                                </div>
+                                <div class="notification__info">
+                                    <h3 class="notification__title">Сражение</h3>
+                                    <h4 class="notification__subtitle">У вас новые предложения на ваше сражение</h4>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            @@include('../html/nav.html')
+        </footer>
+        <!-- <script type="module" src="../js/create-fighting.min.js"></script> -->
+</body>
+</html>
