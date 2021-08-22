@@ -1,4 +1,10 @@
 const formValidChecker = input => {
+    
+    input.addEventListener("focus", function(){
+        if(input.validity.valid == true){
+            input.classList.remove("invalid__input");
+        }
+    });
 
     input.addEventListener("keydown", function(){
         if(input.validity.valid == true){

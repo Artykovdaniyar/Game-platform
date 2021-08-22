@@ -6,7 +6,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: calc(100% - 65px);
+        width: 310px;
         height: 100vh;
         padding: 64px 0 54px;
         z-index: 3;
@@ -131,12 +131,18 @@
             border: none;
         }
     }
+
+
+    @media (max-width: 321px){
+        .side-menu {
+            width: 100%;
+        }
+    }
+
+
     
-
-
-
-@media (min-width: 426) {
-    .side-menu {
-        width: 100%;
+@media (max-height: 600px){
+    .side-menu__link {
+        padding: 15px 20px 15px 38px;
     }
 }

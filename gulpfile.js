@@ -18,15 +18,13 @@ let path={
         css: source_folder+ "/sass/style.scss",
         js: source_folder+ "/js/**/*.js",
         img: source_folder+ "/img/**/*.{png,jpg,svg,gif,ico,webp}",
-        icons: source_folder+ "/icons/**/*.{png,jpg,svg,gif,ico,webp}",
-        fonts: source_folder+ "/fonts/*.ttf",
+        fonts: source_folder+ "/fonts/*.{ttf,woff,woff2}"
     },
     watch:{
         html: source_folder+ "/**/*.html",
         cssCopy: source_folder+ "/css/*.css",
         css: source_folder+ "/sass/**/*.scss",
         js: source_folder+ "/js/**/*.js",
-        icons: source_folder+ "/img/**/*.{png,jpg,svg,gif,ico,webp}",
         img: source_folder+ "/img/**/*.{png,jpg,svg,gif,ico,webp}",
     },
     clean: "./" + project_folder + "/"
@@ -59,24 +57,26 @@ let {src, dest} = require('gulp'),
             port:3000,
             notify: false
         })
-    }
+    };
+    function watchFiles(params){
+        gulp.watch([path.watch.html], html);
+        gulp.watch([path.watch.css], css);
+        gulp.watch([path.watch.js], js);
+        gulp.watch([path.watch.img], images);
+    };
+    function clean(params){
+        return del(path.clean);
+    };
+
+
+
     function html() {
         return src(path.src.html)
             .pipe(fileinclude())
             .pipe(webphtml())
             .pipe(dest(path.build.html))
             .pipe(browsersync.stream())
-    }
-    function watchFiles(params){
-        gulp.watch([path.watch.html], html);
-        gulp.watch([path.watch.css], css);
-        gulp.watch([path.watch.js], js);
-        gulp.watch([path.watch.img], images);
-        gulp.watch([path.watch.cssCopy], copyCSS);
-    }
-    function clean(params){
-        return del(path.clean);
-    }
+    };
     function css (){
         return src(path.src.css)
             .pipe(sass({
@@ -102,12 +102,14 @@ let {src, dest} = require('gulp'),
             )
             .pipe(dest(path.build.css))
             .pipe(browsersync.stream())
-    }
-
+    };
     function js() {
         return src(path.src.js)
             .pipe(fileinclude())
             .pipe(dest(path.build.js))
+            // .pipe(babel({
+            //     presets: ['@babel/env']
+            // }))
             .pipe(uglify())
             .pipe(
                 rename({
@@ -116,7 +118,7 @@ let {src, dest} = require('gulp'),
             )
             .pipe(dest(path.build.js)) 
             .pipe(browsersync.stream())
-    }
+    };
     function images() {
         return src(path.src.img)
         .pipe(
@@ -134,42 +136,19 @@ let {src, dest} = require('gulp'),
             }))
             .pipe(dest(path.build.img))
             .pipe(browsersync.stream())
-    }
-    function iconsCopy() {
-        return src(path.src.icons)
-        .pipe(
-            webp({
-                quality: 70
-            })
-        )
-        .pipe(dest(path.build.icons))
-        .pipe(src(path.src.icons))
-            .pipe(imagemin({
-                    progressive: true,
-                    svgoPlugins: [{removeViewBox: false}],
-                    interlaced: true,
-                    optimizationLevel: 3,
-            }))
-            .pipe(dest(path.build.icons))
-            .pipe(browsersync.stream())
-    }
+    };
     function fonts() {
         src(path.src.fonts)
             .pipe(ttf2woff())
             .pipe(dest(path.build.fonts))
         return src(path.src.fonts)
             .pipe(ttf2woff2())
-            .pipe(dest(path.build.fonts))
-    };
-
-    function copyCSS() {
-        return src(path.src.cssCopy)
-            .pipe(dest(path.build.css))
+            .pipe(dest(path.build.fonts))    
             .pipe(browsersync.stream())
     };
 
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, copyCSS, iconsCopy));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 

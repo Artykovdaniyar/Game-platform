@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Идентификация</title>
+</head>
+<body>
+
+        <header class="page__header">
+            Идентификация
+            <button class="btn__back">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </button>
+        </header>
+        <main class="page__main">
+            <div class="page__container">
+                <section class="identification">
+                    <h2 class="identification__title">Идентификация счета необходима для предотвращения случаев мошенничества, противодействия отмыванию средств и финансирования терроризма.</h2>
+                    <form class="identification__form">
+                        <label class="identification__form-label block__title">Личные данные</label>
+                        <input type="text" class="identification__fullname input" id="identification__fullname" placeholder="ФИО">
+                        <input type="text" class="identification__passport-number input" id="identification__passport-number" placeholder="Номер паспорта">
+                        <input type="text" class="identification__inn input" id="identification__inn" placeholder="ИНН">
+                    
+                        <label class="identification__form-label block__title">Дата рождения</label>
+                        <input type="text" class="identification__birthdate input" id="identification__birthdate" placeholder="Нажмите что б ввести дату">
+
+                        
+                    
+                        <label class="identification__form-label block__title">Адрес проживания</label>
+                        <input type="text" class="identification__country input" id="identification__country" placeholder="Страна">
+                        <input type="text" class="identification__city input" id="identification__city" placeholder="Страна">
+                        <input type="text" class="identification__address input" id="identification__address" placeholder="Адрес">
+                        
+                        <label class="identification__form-label block__title">Документ, удостоверяющий личность</label>
+                        <button type="button" class="identification__person-doc-btn">
+                            Нажмите чтоб загрузить изображение
+                            <input type="file" class="identification__person-doc-input" id="identification__person-doc-input">
+                        </button>
+                        <label class="identification__preview-wrapper">
+                            <button type="button" class="identification__preview-close-btn"></button>
+                        </label>
+                        
+                        <label class="identification__form-label block__title">Документ, удостоверяющий личность</label>
+                        <button type="button" class="identification__address-doc-btn">
+                            Нажмите чтоб загрузить изображение
+                            <input type="file" class="identification__address-doc-input" id="identification__address-doc-input">
+                        </button>
+                        <label class="identification__preview-wrapper">
+                            <button type="button" class="identification__preview-close-btn"></button>
+                        </label> 
+                        
+                        <button type="button" class="identification__submit-btn btn__blue">Отпраить на проверку</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            @@include('../html/nav.html')
+        </footer>
+        <script type="module" src="../js/mobile-header.min.js"></script>
+        <script type="module" src="../js/identification.min.js"></script>
+</body>
+</html>

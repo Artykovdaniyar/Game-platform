@@ -7,7 +7,9 @@
         align-items: flex-start;
         list-style: none;
     }
-
+    &__item {
+        width: 100%;
+    }
     &__link {
         display: flex;
         justify-content: flex-start;
