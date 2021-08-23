@@ -23,24 +23,24 @@
                     <h2 class="identification__title">Идентификация счета необходима для предотвращения случаев мошенничества, противодействия отмыванию средств и финансирования терроризма.</h2>
                     <form class="identification__form">
                         <label class="identification__form-label block__title">Личные данные</label>
-                        <input type="text" class="identification__fullname input" id="identification__fullname" placeholder="ФИО">
-                        <input type="text" class="identification__passport-number input" id="identification__passport-number" placeholder="Номер паспорта">
-                        <input type="text" class="identification__inn input" id="identification__inn" placeholder="ИНН">
+                        <input type="text" class="identification__fullname input" id="identification__fullname" placeholder="ФИО" autocomplete="off" pattern="^[А-ЯЁ A-Z]([А-ЯЁ A-Z а-яё a-z \-]){1,}\s[А-ЯЁ A-Z]([А-ЯЁ A-Z а-яё a-z \-]){1,}">
+                        <input type="text" class="identification__passport-number input" id="identification__passport-number" autocomplete="off" placeholder="Номер паспорта" pattern="[0-9]{5,}">
+                        <input type="text" class="identification__inn input" id="identification__inn" placeholder="ИНН" autocomplete="off"pattern="[0-9]{10,}">
                     
                         <label class="identification__form-label block__title">Дата рождения</label>
-                        <input type="text" class="identification__birthdate input" id="identification__birthdate" placeholder="Нажмите что б ввести дату">
+                        <input type="text" class="identification__birthdate input" id="identification__birthdate" placeholder="дд.мм.гггг" autocomplete="off" pattern="(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)\d\d">
 
                         
                     
                         <label class="identification__form-label block__title">Адрес проживания</label>
-                        <input type="text" class="identification__country input" id="identification__country" placeholder="Страна">
-                        <input type="text" class="identification__city input" id="identification__city" placeholder="Страна">
-                        <input type="text" class="identification__address input" id="identification__address" placeholder="Адрес">
+                        <input type="text" class="identification__country input" id="identification__country" placeholder="Страна" autocomplete="off" pattern="^[А-ЯЁ A-Z][А-ЯЁ A-Z a-z а-яё \-]{1,}">
+                        <input type="text" class="identification__city input" id="identification__city" placeholder="Город" autocomplete="off" pattern="^[А-ЯЁ A-Z][А-ЯЁ A-Z a-z а-яё \-]{1,}">
+                        <input type="text" class="identification__address input" id="identification__address" placeholder="Адрес" autocomplete="off">
                         
                         <label class="identification__form-label block__title">Документ, удостоверяющий личность</label>
                         <button type="button" class="identification__person-doc-btn">
                             Нажмите чтоб загрузить изображение
-                            <input type="file" class="identification__person-doc-input" id="identification__person-doc-input">
+                            <input type="file" class="identification__person-doc-input" id="identification__person-doc-input" autocomplete="off">
                         </button>
                         <label class="identification__preview-wrapper">
                             <button type="button" class="identification__preview-close-btn"></button>
@@ -49,13 +49,13 @@
                         <label class="identification__form-label block__title">Документ, удостоверяющий личность</label>
                         <button type="button" class="identification__address-doc-btn">
                             Нажмите чтоб загрузить изображение
-                            <input type="file" class="identification__address-doc-input" id="identification__address-doc-input">
+                            <input type="file" class="identification__address-doc-input" id="identification__address-doc-input" autocomplete="off">
                         </button>
                         <label class="identification__preview-wrapper">
                             <button type="button" class="identification__preview-close-btn"></button>
                         </label> 
                         
-                        <button type="button" class="identification__submit-btn btn__blue">Отпраить на проверку</button>
+                        <button type="submit" class="identification__submit-btn btn__blue">Отпраить на проверку</button>
                     </form>
                 </section>
             </div>

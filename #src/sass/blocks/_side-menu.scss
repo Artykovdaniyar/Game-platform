@@ -3,15 +3,20 @@
         left: 0;
     }
     .side-menu {
+        &::-webkit-scrollbar{
+            display: none;
+            width: 6px;
+        }
         position: fixed;
         top: 0;
         left: -100%;
         width: 310px;
-        height: 100vh;
+        height: 100%;
         padding: 64px 0 54px;
         z-index: 3;
         background: linear-gradient(180deg, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100% / cover no-repeat;
         transition: .5s left;
+        overflow-y: scroll;
         &__user {
             display: flex;
             justify-content: flex-start;
