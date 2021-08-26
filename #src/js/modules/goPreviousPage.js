@@ -1,5 +1,5 @@
 const goPreviousPage = () =>{
-    const backBtn = document.querySelector(".btn__back");
+    const backBtn = document.querySelector(".mobile-header__back-btn");
     backBtn.addEventListener("click", () =>{
         window.history.back()
     })

@@ -9,13 +9,15 @@
 </head>
 <body>
 
-        <header class="page__header">
-            Уведомления
-            <button class="btn__back">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
-                </svg>
-            </button>
+        <header class="">
+            <div class="mobile-header">
+                Уведомления
+                <button class="mobile-header__back-btn">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                    </svg>
+                </button>
+            </div>
         </header>
         <main class="page__main">
             <div class="page__container">
@@ -44,7 +46,7 @@
                         </li>
 
                         <li class="notification__item">
-                            <a href="../pages/choose-executor.html" class="notification__link">
+                            <a href="../pages/myfighting-myorder.html" class="notification__link">
                                 <div class="notification__icon-wrapper">
                                     <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
@@ -114,21 +116,6 @@
                         </li>
 
                         <li class="notification__item">
-                            <a href="../pages/myfighting-canceled.html" class="notification__link">
-                                <div class="notification__icon-wrapper">
-                                    <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.04913 10.406L8.58312 13.942L7.17012 15.356L8.58512 16.771L7.17112 18.185L4.69613 15.71L1.86713 18.539L0.453125 17.125L3.28212 14.295L0.807125 11.821L2.22113 10.407L3.63513 11.82L5.04812 10.406H5.04913ZM0.999125 0L4.54513 0.00300002L16.3621 11.821L17.7771 10.407L19.1911 11.821L16.7171 14.296L19.5451 17.125L18.1311 18.539L15.3021 15.71L12.8271 18.185L11.4131 16.771L12.8271 15.356L1.00213 3.531L0.999125 0ZM15.4561 0L18.9991 0.00300002L19.0011 3.526L14.9481 7.578L11.4121 4.043L15.4561 0Z" fill="white"/>
-                                    </svg>   
-                                </div>
-                                <div class="notification__info">
-                                    <h3 class="notification__title">Сражение отменено</h3>
-                                    <h4 class="notification__subtitle">Сражение №124124214 отменено</h4>
-                                </div>
-                            </a>
-                        </li>
-
-
-                        <li class="notification__item">
                             <a href="../pages/myfighting-myorder.html" class="notification__link">
                                 <div class="notification__icon-wrapper">
                                     <svg class="notification__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +135,7 @@
         </main>
         
         <footer>
-            @@include('../html/nav.html')
+            @@include('../html/mobile-nav.html')
         </footer>
         <script type="module" src="../js/mobile-header.min.js"></script>
 </body>

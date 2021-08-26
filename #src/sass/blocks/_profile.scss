@@ -1,167 +1,128 @@
-@media (max-width: 426px) {
+@media (min-width: 220px) {
+
     .profile {
-        // overflow-x: hidden;
-        &__header {
-            position: relative;
-            height: 146px;
-            margin-top: 20px;
-        }
-        &__main{
-            padding-bottom: 60px !important;
-        }
-        &__img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-            width: 40%;
-            height: auto;
-    
-        }
-    
-        &__state-list {
-            @include flexCenter;
-            padding: 20px 0 0;
-            flex-wrap: wrap;
-            list-style: none;
-        }
-    
-        &__state-item {
-            flex: 0 0 50%;
-            min-height: 60px;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 13px;
-            &:nth-child(even){
-                text-align: right;
-            }
-            &:nth-child(odd){
-                text-align: left;
-            }
-        }
-    
-        &__stte-name {
-            margin-bottom: 5px;
-            font-weight: 400;
-        }
-    
-        &__state-number {
-        }
-    
-        &__btns-wrapper {
+        padding: 0 0 30px;
+        &__header-wrapper{
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 0 30px;
-            text-align: center;
         }
-    
-        &__btn {
-            color: white;
+
+		&__img {
+            width: 120px;
+            height: 120px;
+            border-radius: 42px;
+		}
+
+		&__statistic {
+            flex-direction: column;
+            font-weight: 400;
             font-size: 12px;
             line-height: 13px;
-            border: none;
-            background: none;
-            &:first-child{
-                margin-right: 10px;
+            padding-left: 20px;
+		}
+
+		&__statistic-item {
+            &:not(:first-child){
+                margin-top: 2px;
             }
-    
+		}
+        &__statistic-fighting{
+            color: white;
         }
-    
-        &__btn-like {
+        &__statistic-win{
+            color: #6BE795;
         }
-    
-        &__btn-dislike {
+        &__statistic-win-percent{
+            color: #00A3FF;
         }
-    
+        &__statistic-lost{
+            color: #FB9191;
+        }
+
+		&__statistic-name {
+            font-weight: 400;
+		}
+
+        &__rate-btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__rate-btn {
+            color: white;
+            margin-top: 20px;
+        }
+
+        &__rate-like {
+            margin-right: 10px;
+        }
+        &__rate-dislike {
+            color: #6A6E77;
+        }
+
+        &__contacts{
+            margin-top: 30px;
+        }
         &__descr {
-            padding: 30px 0 60px;
+            margin-top: 30px;
         }
-    
-        &__descr-title {
-            margin-bottom: 10px;
-        }
-    
+
         &__descr-text {
+            margin-top: 10px;
         }
-    
+
         &__mark {
-            padding-bottom: 50px;
+            margin-top: 66px;
         }
-    
-        &__mark-title {
-            margin-bottom: 17px;
-        }
-    
+
         &__mark-list {
-            list-style: none;
+            margin-top: 17px;
         }
-    
+
         &__mark-item {
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 15px;
         }
-    
+
         &__mark-name {
+            font-weight: normal;
             font-size: 12px;
             line-height: 14px;
             color: #B5B5B5;
-            font-weight: 400;
-            width: 90px;
-            margin-right: 16px;
-    
+            width: 100px;
         }
-    
-        &__mark-dots {
-    
-        }
-    
-        &__mark-politeness {
-        }
-    
-        &__mark-punctuality {
-        }
-    
-        &__mark-adequacy {
-        }
-    
+
         &__review {
+            margin-top: 51px;
         }
-    
-        &__review-title {
-        }
-    
-        &__area {
-        }
-    
+
         &__comment {
             padding: 20px 0;
             &:not(:last-child){
                 @include borderBottom;
             }
         }
-        &__comment-wrapper{
+
+        &__comment-wrapper {
             display: flex;
             justify-content: center;
             align-items: flex-start;
         }
-    
+
         &__comment-img {
             width: 30px;
             height: 30px;
             margin-right: 10px;
         }
-    
+
         &__comment-text {
             font-weight: 400;
             font-size: 14px;
             line-height: 20px;
             color: #B5B5B5;
         }
-    
+
         &__comment-info {
             display: flex;
             justify-content: space-between;
@@ -172,28 +133,12 @@
             color: #5B6C7C;
             padding-top: 10px;
         }
-    
-        &__comment-author {
-        }
-    
-        &__comment-date {
-            transform: translateX(-90%);
-        }
-    
-        &__review-btn {
-            margin-top: 20px !important;
-        }
-    
+
         &__conform {
             padding-top: 40px;
         }
-    
-        &__conform-title {
-            margin-bottom: 30px;
-        }
-    
         &__conform-list {
-            list-style: none;
+            margin-top: 30px;
         }
     
         &__conform-item {
@@ -207,76 +152,165 @@
         &__conform-icon {
             margin-right: 30px;
         }
-    
-        &__game-title {
-            padding-bottom: 7px;
-        }
+
         &__game-list {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            list-style: none;
-            padding-bottom: 37px;
+            margin-top: 7px;
         }
+        &__game-item {
+            width: 100%;
+        }
+
         &__game-link {
             display: flex;
             justify-content: center;
             align-items: flex-start;
             color: white;
             text-decoration: none;
-            padding: 20px 0;
+            width: 100%;
+            padding: 10px 0;
         }
-    
+
         &__game-img {
-            margin-right: 39px;
+            margin-right: 40px;
         }
-    
+
         &__game-info {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
             width: 100%;
             flex-grow: 1;
-            flex-basis: 1;
+            flex-basis: 100%;
         }
-    
+
         &__game-name {
-            padding-bottom: 3px;
-            font-size: 16px;
-            line-height: 24px;
+            padding-bottom: 6px;
+            font-size: 14px;
             font-weight: 400;
-    
         }
-    
+
         &__game-statistic {
             display: flex;
-    
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
         }
-    
-        &__statistic-item {
+
+        &__game-statistic-item {
             display: flex;
+            justify-content: flex-start;
             align-items: center;
             font-size: 11px;
             line-height: 13px;
-            margin-right: 31px;
         }
-        &__statistic-icon{
-            
+        &__game-statistic-fighting{
+            color: white;
         }
-        &__fighting-num {
-        }
-    
-        &__win-num {
+        &__game-statistic-win{
             color: #6BE795;
         }
-    
-        &__lost-num {
+        &__game-statistic-lost{
             color: #FB9191;
         }
-    
+        &__game-statistic-icon {
+            width: 10px;
+            height: 10px;
+            margin-right: 4px;
+        }
     }
+    
+
+}
+
+@media (min-width: 300px) {
+    .profile {
+		&__header-wrapper {
+            position: relative;
+            height: 146px;
+            margin-top: 20px;
+            width: 100%;
+		}
+
+		&__img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 40%;
+            height: auto;
+		}
+
+		&__statistic {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 20px 0 0;
+            flex-wrap: wrap;
+            list-style: none;
+            width: 100%;
+		}
+
+		&__statistic-item {
+            flex: 0 0 50%;
+            min-height: 60px;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            &:nth-child(even){
+                text-align: right;
+            }
+            &:nth-child(odd){
+                text-align: left;
+            }
+
+		}
+
+		&__comment-info {
+            justify-content: flex-start;
+		}
+
+		&__comment-author {
+            width: calc(100% / 3);
+		}
+
+		&__review-btn {
+            margin-top: 20px;
+		}
+		&__game-link {
+            padding: 20px 0;
+		}
+		&__game-name {
+        font-size: 16px;
+        line-height: 24px;
+		}
+        &__game-statistic-icon {
+            width: 8px;
+            height: 8px;
+		}
+
+		&__game-statistic {
+            justify-content: space-between;
+            padding-right: 80px;
+		}
+
+		&__game-statistic-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+		}
+    }
+
+
     
 }
 

@@ -1,38 +1,39 @@
 @media (min-width:320px) {
-
-    .about {
-        padding: 30px 0 80px;
-		&__title,
-        &__descr{
+      .about {
+            padding: 30px 0 80px;
+            &__title,
+            &__descr{
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
-		}
+            }
 
-		&__descr {
+            &__descr {
             margin-top: 30px;
-		}
+            }
 
-		&__company {
+            &__company {
+            margin-top: 50px;
             text-align: center;
-		}
+            }
 
-		&__company-text {
+            &__company-text {
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
             margin-top: 50px;
-		}
+            }
 
-		&__company-link {
+            &__company-link {
             display: block;
-            margin-top: 10px;		}
+            margin-top: 10px;		
+            }
 
-		&__company-img {
+            &__company-img {
             width: 109px;
             height: 36px;
-		}
-}
+            }
+      }
 
 
 

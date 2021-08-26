@@ -8,13 +8,15 @@
     <title>Все игры</title>
 </head>
 <body>
-    <header class="page__header">
-        Все игры
-        <button class="btn__back">
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
-            </svg>
-        </button>
+    <header class="">
+        <div class="mobile-header">
+            Все игры
+            <button class="mobile-header__back-btn">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </button>
+        </div>
     </header>
     <main class="page__main">
         <section class="games">
@@ -52,7 +54,7 @@
                 </li>
 
                 <li class="games__item">
-                    <a href="#" class="games__link">
+                    <a href="./game.html" class="games__link">
                         <img src="../img/CS.png" alt="Game logo" class="games__img">
                         <div class="games__info">
                             <h2 class="games__title">Counter-Strike: Global Offensive</h2>
@@ -249,7 +251,7 @@
         </section>
     </main>gulp
     <footer>
-        @@include('../html/nav.html')
+        @@include('../html/mobile-nav.html')
     </footer>
     <script type="module" src="../js/mobile-header.min.js"></script>
 </body>

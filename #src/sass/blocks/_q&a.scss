@@ -11,6 +11,7 @@
         line-height: 24px;
         color: #FFFFFF;
         padding: 17.5px 0;
+        @include borderBottom;
     }
 
     &__question {
@@ -24,10 +25,12 @@
         line-height: 24px;
         color: #FFFFFF;
         text-align: left;
+
     }
 
     &__question-icon {
-        margin-top: 15px;
+        margin-top: 5px;
+        margin-left: 15px;
         flex-shrink: 0;
         transition: .5s transform;
     }

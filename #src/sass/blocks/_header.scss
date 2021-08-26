@@ -1,43 +1,43 @@
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 64px;
-    overflow: hidden;
-    background-color: $black-color;
-    padding: 0;
-    &--fixed{
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 23px;
-        border: 1px solid transparent;
-        background-color: transparent;
-        cursor: pointer;
-        transition: .5s all;
-        &:active{
-            background-color: white;
-        }
-        &:active > svg{
-            fill: $black-color;
-        }
-    }
-    &__icons{
-        fill: #e4e4e4;
-        transition: .1s all;
-    }
-}
+// .header {
+//     position: fixed;
+//     top: -1px;
+//     left: 0;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//     height: 64px;
+//     overflow: hidden;
+//     background-color: $black-color;
+//     padding: 0;
+//     &--fixed{
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//     }
+//     &__btn {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 100%;
+//         padding: 23px;
+//         border: 1px solid transparent;
+//         background-color: transparent;
+//         cursor: pointer;
+//         transition: .5s all;
+//         &:active{
+//             background-color: white;
+//         }
+//         &:active > svg{
+//             fill: $black-color;
+//         }
+//     }
+//     &__icons{
+//         fill: #e4e4e4;
+//         transition: .1s all;
+//     }
+// }
 
 
 

@@ -9,13 +9,15 @@
 </head>
 <body>
 
-        <header class="page__header">
-            Идентификация
-            <button class="btn__back">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
-                </svg>
-            </button>
+        <header class="">
+            <div class="mobile-header">
+                Идентификация
+                <button class="mobile-header__back-btn">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                    </svg>
+                </button>
+            </div>
         </header>
         <main class="page__main">
             <div class="page__container">
@@ -23,19 +25,19 @@
                     <h2 class="identification__title">Идентификация счета необходима для предотвращения случаев мошенничества, противодействия отмыванию средств и финансирования терроризма.</h2>
                     <form class="identification__form">
                         <label class="identification__form-label block__title">Личные данные</label>
-                        <input type="text" class="identification__fullname input" id="identification__fullname" placeholder="ФИО" autocomplete="off" pattern="^[А-ЯЁ A-Z]([А-ЯЁ A-Z а-яё a-z \-]){1,}\s[А-ЯЁ A-Z]([А-ЯЁ A-Z а-яё a-z \-]){1,}">
-                        <input type="text" class="identification__passport-number input" id="identification__passport-number" autocomplete="off" placeholder="Номер паспорта" pattern="[0-9]{5,}">
-                        <input type="text" class="identification__inn input" id="identification__inn" placeholder="ИНН" autocomplete="off"pattern="[0-9]{10,}">
+                        <input type="text" class="identification__fullname page__input" id="identification__fullname" placeholder="ФИО" autocomplete="off" pattern="^[А-ЯЁ A-Z]([А-ЯЁ A-Z а-яё a-z \-]){1,}\s[А-ЯЁ A-Z]([А-ЯЁ A-Z а-яё a-z \-]){1,}">
+                        <input type="text" class="identification__passport-number page__input" id="identification__passport-number" autocomplete="off" placeholder="Номер паспорта" pattern="[0-9]{5,}">
+                        <input type="text" class="identification__inn page__input" id="identification__inn" placeholder="ИНН" autocomplete="off"pattern="[0-9]{10,}">
                     
                         <label class="identification__form-label block__title">Дата рождения</label>
-                        <input type="text" class="identification__birthdate input" id="identification__birthdate" placeholder="дд.мм.гггг" autocomplete="off" pattern="(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)\d\d">
+                        <input type="text" class="identification__birthdate page__input" id="identification__birthdate" placeholder="дд.мм.гггг" autocomplete="off" pattern="(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)\d\d">
 
                         
                     
                         <label class="identification__form-label block__title">Адрес проживания</label>
-                        <input type="text" class="identification__country input" id="identification__country" placeholder="Страна" autocomplete="off" pattern="^[А-ЯЁ A-Z][А-ЯЁ A-Z a-z а-яё \-]{1,}">
-                        <input type="text" class="identification__city input" id="identification__city" placeholder="Город" autocomplete="off" pattern="^[А-ЯЁ A-Z][А-ЯЁ A-Z a-z а-яё \-]{1,}">
-                        <input type="text" class="identification__address input" id="identification__address" placeholder="Адрес" autocomplete="off">
+                        <input type="text" class="identification__country page__input" id="identification__country" placeholder="Страна" autocomplete="off" pattern="^[А-ЯЁ A-Z][А-ЯЁ A-Z a-z а-яё \-]{1,}">
+                        <input type="text" class="identification__city page__input" id="identification__city" placeholder="Город" autocomplete="off" pattern="^[А-ЯЁ A-Z][А-ЯЁ A-Z a-z а-яё \-]{1,}">
+                        <input type="text" class="identification__address page__input" id="identification__address" placeholder="Адрес" autocomplete="off">
                         
                         <label class="identification__form-label block__title">Документ, удостоверяющий личность</label>
                         <button type="button" class="identification__person-doc-btn">
@@ -62,7 +64,7 @@
         </main>
         
         <footer>
-            @@include('../html/nav.html')
+            @@include('../html/mobile-nav.html')
         </footer>
         <script type="module" src="../js/mobile-header.min.js"></script>
         <script type="module" src="../js/identification.min.js"></script>

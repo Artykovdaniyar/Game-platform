@@ -8,20 +8,22 @@
     <title>Dota 2</title>
 </head>
 <body>
-    <header class="page__header">
-        Dota 2
-        <button class="btn__back">
-            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
-            </svg>
-        </button>
+    <header class="">
+        <div class="mobile-header">
+            Dota 2
+            <button class="mobile-header__back-btn">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </button>
+        </div>
     </header>
     <main class="page__main">
         <section class="game">
             <div class="game__promo">
-                <img src="../img/dota2.png" alt="Game logo" class="game__img">
+                <img src="../img/CS.png" alt="Game logo" class="game__img">
                 <div class="game__info">
-                    <h2 class="game__title">Dota 2</h2>
+                    <h2 class="game__title">Counter-Strike: Global Offensive</h2>
                     <ul class="game__statistic">
                         <li class="game__statistic-item">
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,20 +44,125 @@
                             <span class="game__bet-cost">до 25 000 с</span>
                         </li>
                         <li class="game__statistic-item">
-                            <span class="game__statistic-category">Стратегия</span>
+                            <span class="game__statistic-category">Шутер</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="game__task">
-                @@include('../html/game-task.html')
+            <div class="game__task page__container">
+                <ul class="__list">
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">2500 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">500 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">1000 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">999 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">2500 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">500 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">1000 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="game-task__item">
+                        <a href="#" class="game-task__link">
+                            <img src="../img/csgo-mini.png" alt="dota" class="game-task__img">
+                            <h4 class="game-task__title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                            <div class="game-task__price-wrapper">
+                                <div class="game-task__price">999 с</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0.666626C12.05 0.666626 15.3333 2.45729 15.3333 4.66663V7.33329C15.3333 9.54263 12.05 11.3333 8 11.3333C4.022 11.3333 0.784005 9.60596 0.670005 7.45129L0.666672 7.33329V4.66663C0.666672 2.45729 3.95001 0.666626 8 0.666626ZM8 8.66663C5.52 8.66663 3.32667 7.99529 2.00001 6.96663V7.33329C2.00001 8.58796 4.58867 9.99996 8 9.99996C11.34 9.99996 13.892 8.64663 13.9967 7.41196L14 7.33329L14.0007 6.96663C12.674 7.99463 10.4807 8.66663 8 8.66663ZM8 1.99996C4.58867 1.99996 2.00001 3.41196 2.00001 4.66663C2.00001 5.92129 4.58867 7.33329 8 7.33329C11.4113 7.33329 14 5.92129 14 4.66663C14 3.41196 11.4113 1.99996 8 1.99996Z" fill="#FFB156"/>
+                                </svg>   
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
             </div>
         </section>
         <button class="game__subscribe-btn btn__blue">Подписаться на категорию</button>
     </main>
     
     <footer>
-        @@include('../html/nav.html')
+        @@include('../html/mobile-nav.html')
     </footer>
     <script type="module" src="../js/mobile-header.min.js"></script>
 </body>

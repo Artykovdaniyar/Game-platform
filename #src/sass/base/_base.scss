@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: $black-color;
+    color: white;
+    overflow-x: hidden;
+}
+button{
+    border: none;
+    background: none;
+}
+picture{
+    font-size: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}

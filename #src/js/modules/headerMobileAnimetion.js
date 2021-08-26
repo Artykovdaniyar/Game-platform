@@ -1,6 +1,6 @@
 const headerMobileAnimetion = () => {
     let scrollBefore = 0;
-    const header = document.querySelector(".page__header");
+    const header = document.querySelector(".mobile-header");
 
     header.classList.add("animate__animated");
 

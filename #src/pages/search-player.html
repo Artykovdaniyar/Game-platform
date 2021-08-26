@@ -9,29 +9,31 @@
 </head>
 <body>
 
-        <header class="page__header">
-            Создание сражения
-            <button class="btn__back">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
-                </svg>
-            </button>
+        <header class="">
+            <div class="mobile-header">
+                Создание сражения
+                <button class="mobile-header__back-btn">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                    </svg>
+                </button>
+            </div>
         </header>
         <main class="page__main">
             <section class="search-player">
                 <div class="page__container">
                     <h3 class="search-player__title block__title">Поиска игрока</h3>
                     <div class="search-player__input-wrapper">
-                        <input type="text" class="search-player__input search-player__search-input" placeholder="Введите имя или ник">
+                        <input type="text" class=" search-player__search-input page__input" placeholder="Введите имя или ник">
                         <svg class="search-player__input-btn" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.364 4.95L11.314 0L12.728 1.414L7.778 6.364L12.728 11.314L11.314 12.728L6.364 7.778L1.414 12.728L0 11.314L4.95 6.364L0 1.414L1.414 0L6.364 4.95Z" fill="#535C65"/>
                         </svg>
                     </div>
                     <div class="search-player__extra-search">
                         <h3 class="search-player__subtitle block__title">Если вы не нашли в поиске<br> напишите имя, фамилие и ник здесь</h3>
-                        <input type="text" name="userFirstName" class="search-player__input search-player__firstname-input" placeholder="Введите имя">
-                        <input type="text" name="userLastName" class="search-player__input search-player__lastname-input" placeholder="Введите фамилие">
-                        <input type="text" name="userNick" class="search-player__input search-player__nick-input" placeholder="Введите ник">
+                        <input type="text" name="userFirstName" class=" search-player__firstname-input page__input" placeholder="Введите имя">
+                        <input type="text" name="userLastName" class=" search-player__lastname-input page__input" placeholder="Введите фамилие">
+                        <input type="text" name="userNick" class=" search-player__nick-input page__input" placeholder="Введите ник">
                     </div>
                     <button class="search-player__goon-btn btn__blue">Продолжить</button>
                 </div>
@@ -146,7 +148,7 @@
 
         
         <footer>
-            @@include('../html/nav.html')
+            @@include('../html/mobile-nav.html')
         </footer>
 
 

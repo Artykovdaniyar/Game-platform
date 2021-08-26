@@ -1,9 +1,13 @@
 
-@import "base/fonts";
+
 @import "base/variables";
+@import "base/base";
+@import "base/fonts";
 @import "base/scroll";
 @import "base/mixins";
+@import "base/page";
 @import "base/utilities";
+@import "base/mobile";
 @import "blocks/header";
 @import "blocks/task";
 @import "blocks/nav";
@@ -15,8 +19,6 @@
 @import "blocks/all-games";
 @import "blocks/game";
 @import "blocks/game-task";
-@import "blocks/game2";
-@import "blocks/game2";
 @import "blocks/myfighting-all";
 @import "blocks/tabs";
 @import "blocks/create-fighting";
@@ -36,33 +38,6 @@
 
 
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-body{
-    font-family: 'SF Pro Display', sans-serif;
-    background-color: $black-color;
-    color: white;
-    overflow-x: hidden;
-
-}
-button{
-    border: none;
-    background: none;
-}
-.noscroll{
-    overflow-y: hidden;
-    margin-right: 8px;
-}
-picture{
-    font-size: 0;
-}
-
 .invalid__input{
     border: 2px solid red;
 }
@@ -70,3 +45,5 @@ picture{
 .valid__input{
     border: 2px solid green;
 }
+
+

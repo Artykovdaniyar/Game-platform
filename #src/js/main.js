@@ -1,6 +1,6 @@
 import openSideMenu from "./modules/openSideMenu.js"
 import headerMobileAnimetion from "./modules/headerMobileAnimetion.js"
-openSideMenu(".header__menu", ".side-menu__exit-btn", ".side-menu");
+openSideMenu(".mobile-header__menu", ".side-menu__exit-btn", ".side-menu");
 headerMobileAnimetion()
 
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Пополнение Баланса</title>
+</head>
+<body>
+
+        <header class="">
+            <div class="mobile-header">
+                Пополнение баланса
+                <button class="mobile-header__back-btn">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                    </svg>
+                </button>
+            </div>
+
+        </header>
+        <main class="page__main">
+            <div class="page__container">
+                <section class="balance-up">
+                    <div class="balance-up__card-img">
+                        <img src="../img/vise-mc.png" alt="VISA & MASTER CARD" class="balance-up__pay-img">
+                        <span class="balance-up__pay-name">Visa, MasterCard</span>
+                    </div>
+                    <form action="" class="balance-up__form">
+                        <label for="balance-up__card-num" class="balance-up__label block__title">Номер карты</label>
+                        <input type="text" class="balance-up__card-num" id="balance-up__card-num" maxlength="19" minlength="19" placeholder="Введите номер карты" autocomplete="off" pattern="\d{4}\s[\d]{4}\s\d{4}\s[\d]{4}">
+                    
+                        <div class="balance-up__card-info">
+                            <div class="balance-up__card-item">
+                                <label for="balance-up__card-month" class="balance-up__label block__title">Годен до</label>
+                                <input type="text" class="balance-up__card-month" id="balance-up__card-month" maxlength="2" minlength="2"  placeholder="ММ" autocomplete="off" pattern="0[1-9]|1[012]">
+                            </div>
+                            <div class="balance-up__card-item">
+                                <input type="text" class="balance-up__card-year" id="balance-up__card-year" min="21" maxlength="2" placeholder="ГГ" autocomplete="off" pattern="[0-9]{2}">
+                            </div>
+                            <div class="balance-up__card-item">
+                                <label for="balance-up__card-cvc" class="balance-up__label block__title">CVC</label>
+                                <input type="text" class="balance-up__card-cvc" id="balance-up__card-cvc"placeholder="CVC" maxlength="3" autocomplete="off" pattern="\d{3}">
+                            </div>
+                        </div>
+    
+                        <label for="balance-up__sum" class="balance-up__label block__title">Сумма</label>
+                        <input type="number" class="balance-up__sum" id="balance-up__sum" placeholder="Введите сумму пополнения" min="50" autocomplete="off">
+                        <button  class="balance-up__btn btn__blue">Пополнить</button>
+                    </form>
+                </section>
+            </div>
+
+        </main>
+
+
+
+
+
+        
+        <footer>
+            @@include('../html/mobile-nav.html')
+        </footer>
+
+
+        <div class="popup__window balance-up__popup animate__animated">
+            <svg class="popup__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM7.5 7L5 9.5L10 14.5L15 9.5L12.5 7H7.5Z" fill="#FFBB3D"/>
+            </svg>
+            <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <a href="../index.html" class="popup__btn btn__blue">Перейти к главной странице</a>
+        </div>
+
+
+
+
+
+
+        <script src="../js/balanceup_form.js"></script>
+        <script type="module" src="../js/mobile-header.min.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 
 .task {
     font-family: 'SF Pro Display', sans-serif;
-    padding: 0 12px;
+    padding: 0 20px;
     &__list {
         display: flex;
         width: 100%;
@@ -22,9 +22,7 @@
     &__link {
         font-size: 12px;
         line-height: 14px;
-        color: white;
-        text-decoration: none;
-        padding: 35px 8px 28px 20px;
+        padding: 35px 0 28px 0;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -37,8 +35,6 @@
         margin-right: 10px;
     }
 
-    &__descr {
-    }
 
     &__title {
         font-size: 16px;

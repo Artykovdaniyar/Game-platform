@@ -1,11 +1,6 @@
 @media (max-width: 426px) {
     .review {
-    &__main{
-        padding-bottom: 83px;
-    }
-    &__mark {
-        padding: 40px 0 50px;
-    }
+        padding: 40px 0 80px;
 
     &__mark-title {
         display: block;
@@ -38,12 +33,14 @@
     }
 
     &__mark-btn {
-        border: none;
-        background: none;
+        padding: 0 4px;
+        & > *{
+            pointer-events: none;
+        }
     }
 
     &__comment {
-        padding-bottom: 40px;
+        margin-top: 40px;
     }
     &__comment-title {
         display: block;
@@ -51,20 +48,8 @@
     }
 
     &__comment-textarea {
-        display: block;
-        width: 100%;
         min-height: 109px;
-        height: fit-content;
-        margin: 0 auto;
-        padding: 18px 21px;
-        font-size: 14px;
-        line-height: 17px;
-        overflow-y: auto;
         resize: vertical;
-        color: white;
-        background: #272F37;
-        border: none;
-        border-radius: 16px;
         &:focus{
             outline: none;
         }
@@ -72,6 +57,9 @@
             font-family: 'SF Pro Display', sans-serif;
             color: #535C65;
         }
+    }
+    &__submit-btn{
+        margin-top: 40px;
     }
 }
 
