@@ -1,8 +1,6 @@
-.qaa {
+@media (min-width:280px) {
+  .qaa {
     padding: 30px 0 90px;
-    &__list {
-        list-style: none;
-    }
 
     &__item {
         width: 100%;
@@ -49,8 +47,9 @@
         max-height: 0;
     }
     &__answer.active{
-        // max-height: fit-content;
-
         min-height: 100%;
     }
 }
+  
+}
+

@@ -1,14 +1,12 @@
-
-
 @import "base/variables";
 @import "base/base";
 @import "base/fonts";
 @import "base/scroll";
 @import "base/mixins";
-@import "base/page";
+@import "base/animation";
+@import "blocks/page";
 @import "base/utilities";
-@import "base/mobile";
-@import "blocks/header";
+@import "blocks/mobile";
 @import "blocks/task";
 @import "blocks/nav";
 @import "blocks/side-menu";
@@ -24,7 +22,6 @@
 @import "blocks/create-fighting";
 @import "blocks/balanceup";
 @import "blocks/popup";
-@import "base/anime-css";
 @import "blocks/balance";
 @import "blocks/search-player";
 @import "blocks/player-list";
@@ -34,6 +31,10 @@
 @import "blocks/q&a";
 @import "blocks/identification";
 @import "blocks/about";
+@import "blocks/setting";
+@import "blocks/personal-info";
+@import "blocks/change-password";
+
 
 
 

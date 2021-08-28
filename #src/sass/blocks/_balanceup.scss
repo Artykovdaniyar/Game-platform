@@ -26,7 +26,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 19px;
-        color: #FFB156;
+        color: $gold-color;
     }
 
     &__subtitle {
@@ -39,7 +39,7 @@
     &__list {
         padding-left: 30px;
         padding-top: 25px;
-        list-style: none;
+        
     }
 
     &__item {
@@ -60,7 +60,7 @@
             height: 11px;
             border-width: 0 2px 2px 0;
             border-style: solid;
-            border-color: white;
+            border-color: $white-color;
             transform-origin: bottom left;
             transform: rotate(45deg);
         }
@@ -68,7 +68,7 @@
 
     &__pay-list {
         padding-top: 25px;
-        list-style: none;
+        
     }
 
     &__pay-item {
@@ -84,8 +84,8 @@
         padding: 0 20px;
         background: #272F37;
         border-radius: 16px;
-        color: white;
-        text-decoration: none;
+        color: $white-color;
+        
     }
 
     &__pay-img {
@@ -138,7 +138,7 @@
         font-size: 14px;
         line-height: 17px;
         border: none;
-        color: white;
+        color: $white-color;
         background: #272F37;
         border-radius: 16px;
         &::placeholder{

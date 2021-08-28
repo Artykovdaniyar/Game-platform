@@ -1,54 +1,56 @@
-
-.game-task {
-    &__list {
-        list-style: none;
-    }
-    &__item {
-        &:not(:last-child){
-            @include borderBottom;
+@media (min-width:280px){
+    .game-task {
+        &__list {
+            
         }
-    }
-
-    &__link {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 100%;
-        color: white;
-        padding: 20px 0;
-        text-decoration: none;
-
-    }
-
-    &__img {
-        display: inline-block;
-        width: 42px;
-        height: 42px;
-        margin-right: 20px;
-        // flex: 1 0 42px;
-        object-fit: cover;
-    }
-
-    &__title {
-        display: inline-block;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        margin-right: 10px;
-        flex-shrink: 1;
-    }
-
-    &__price-wrapper {
-        @include flexCenter;
-        flex-direction: column;
-        flex-shrink: 0;
-        height: 100%;
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    &__price {
-        margin-bottom: 2px;
+        &__item {
+            &:not(:last-child){
+                @include borderBottom;
+            }
+        }
+    
+        &__link {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            color: $white-color;
+            padding: 20px 0;
+            
+    
+        }
+    
+        &__img {
+            display: inline-block;
+            width: 42px;
+            height: 42px;
+            margin-right: 20px;
+            // flex: 1 0 42px;
+            object-fit: cover;
+        }
+    
+        &__title {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            margin-right: 10px;
+            flex-shrink: 1;
+        }
+    
+        &__price-wrapper {
+            @include flexCenter;
+            flex-direction: column;
+            flex-shrink: 0;
+            height: 100%;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    
+        &__price {
+            margin-bottom: 2px;
+        }
+        
     }
     
 }

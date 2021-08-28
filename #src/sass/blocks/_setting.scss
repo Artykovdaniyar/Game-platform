@@ -1,0 +1,39 @@
+@media (min-width:280px) {
+    .setting {
+    &__container{
+        padding: 0;
+    }
+    &__list {
+        margin-top: 5px;
+    }
+
+    &__link{
+        @include borderBottom;
+    }
+    &__link,
+    &__exit-btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        width: 100%;
+        padding: 25px 20px;
+        transition: .2s all;
+        &:active{
+            color: black;
+            background: $white-color;
+        }
+
+    }
+
+    &__item-icon {
+        margin-right: 30px;
+
+    }
+
+}
+
+}

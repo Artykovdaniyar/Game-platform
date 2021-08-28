@@ -1,52 +1,51 @@
-.balance {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    &__btn {
-        display: flex;
+@media (min-width:280px){
+    .balance {
+        display: none;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 171px;
-        height: 42px;
-        border: 1px solid #FB9191;
-        border-radius: 16px;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 16px;
-        color: #FB9191;
-    }
-
-    &__text {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 18px;
-        text-align: center;
-        color: #FB9191;
-        padding: 0 36px;
-        margin-top: 10px;
-    }
-
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 22px;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 18px;
-        text-align: center;
-    }
-
-    &__icon {
-        
-        margin-right: 11px;
-    }
-
-    &__status {
-    }
-
-    &__num {
+        margin-top: 20px;
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 171px;
+            height: 42px;
+            border: 1px solid #FB9191;
+            border-radius: 16px;
+            
+            font-weight: 400;
+            font-size: 16px;
+            color: #FB9191;
+        }
+    
+        &__text {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: #FB9191;
+            padding: 0 36px;
+            margin-top: 10px;
+        }
+    
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 22px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+        }
+    
+        &__icon {
+            
+            margin-right: 11px;
+        }
+    
+    
     }
 }
+

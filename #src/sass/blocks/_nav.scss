@@ -1,41 +1,43 @@
-
-.mobile-nav{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 83px;
-
-    background-color: $black-color;
-    &__btn {
+@media (min-width:280px) {
+    .mobile-nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-decoration: none;
-        padding: 18px 0;
-        color: white;
-        width: calc(100% / 4);
-        font-size: 12px;
-        line-height: 14px;
-        cursor: pointer;
-        transition: 0.1s all;
-        &:active{
-            color: $black-color;
-            background-color: white;
+        align-items: center;
+        width: 100%;
+        min-height: 83px;
+    
+        background-color: $blue-dark-color;
+        &__btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            padding: 18px 0;
+            color: $white-color;
+            width: calc(100% / 4);
+            font-size: 12px;
+            line-height: 14px;
+            cursor: pointer;
+            transition: 0.1s all;
+            &:active{
+                color: $blue-dark-color;
+                background-color: $white-color;
+            }
+            &:active > svg{
+                fill: $blue-dark-color;
+            }
         }
-        &:active > svg{
-            fill: $black-color;
+    
+        &__icons {
+            fill: $white-color;
+            margin-bottom: 13px;
+            transition: 0.1s all;
         }
-    }
+    }   
+}
 
-    &__icons {
-        fill: white;
-        margin-bottom: 13px;
-        transition: 0.1s all;
-    }
-}   
 

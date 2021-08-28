@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Личная информация</title>
+</head>
+<body>
+
+    <header class="">
+        <div class="mobile-header">
+            Личная информация
+            <button class="mobile-header__back-btn">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.828 7L7.778 11.95L6.364 13.364L0 7L6.364 0.636002L7.778 2.05L2.828 7Z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="page__main">
+        <div class="page__container">
+            <section class="personal-info">
+                <header class="personal-info__header">
+                    <div class="personal-info__img-warpper">
+                        <img src="../img/user1.png" alt="" class="personal-info__img">
+                        <div class="personal-info__selected-img"></div>
+                        <button class="personal-info__select-btn">
+                            <svg class="personal-info__select-btn-icon" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.667007 4.00001C0.667007 3.54 1.04617 3.16667 1.49367 3.16667H16.507C16.9637 3.16667 17.3337 3.5375 17.3337 4.00001V15.6667C17.3337 16.1267 16.9545 16.5 16.507 16.5H1.49367C1.38461 16.4998 1.27667 16.478 1.17604 16.436C1.07541 16.394 0.984065 16.3325 0.907258 16.255C0.830451 16.1776 0.76969 16.0858 0.728461 15.9848C0.687233 15.8838 0.666349 15.7757 0.667007 15.6667V4.00001ZM10.667 14C11.7721 14 12.8319 13.561 13.6133 12.7796C14.3947 11.9982 14.8337 10.9384 14.8337 9.83334C14.8337 8.72827 14.3947 7.66846 13.6133 6.88706C12.8319 6.10566 11.7721 5.66667 10.667 5.66667C9.56194 5.66667 8.50213 6.10566 7.72073 6.88706C6.93933 7.66846 6.50034 8.72827 6.50034 9.83334C6.50034 10.9384 6.93933 11.9982 7.72073 12.7796C8.50213 13.561 9.56194 14 10.667 14ZM2.33367 4.83334V6.5H4.83367V4.83334H2.33367ZM2.33367 0.666672H7.33367V2.33334H2.33367V0.666672Z" fill="white"/>
+                            </svg>
+                            <input class="personal-info__select-input" type="file">
+                        </button>
+                    </div>
+                </header>
+                <form class="personal-info__form">
+                    <label for="personal-info__firstname" class="personal-info__label block__title">Имя</label>
+                    <input type="text" class="personal-info__firstname page__input" id="personal-info__firstname" value="Азим" autocomplete="off" pattern="^[А-ЯЁ]([А-ЯЁ A-Z а-яё \-]){1,20}">
+
+                    <label for="personal-info__lastname" class="personal-info__label block__title">Фамилие</label>
+                    <input type="text" class="personal-info__lastname page__input" id="personal-info__lastname" value="Дженалиев" autocomplete="off" pattern="^[А-ЯЁ]([А-ЯЁ A-Z а-яё \-]){1,20}">
+
+                    <label for="personal-info__nick" class="personal-info__label block__title">Ник</label>
+                    <input type="text" class="personal-info__nick page__input" id="personal-info__nick" value="appass1nato" autocomplete="off" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,15}$">
+
+                    <label for="personal-info__email" class="personal-info__label block__title">Электронный адрес</label>
+                    <input type="text" class="personal-info__email page__input" id="personal-info__email" value="azimdzhenaliev@gmail.com" autocomplete="off" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+
+                    <label for="personal-info__number" class="personal-info__label block__title">Телефонный номер</label>
+                    <input type="tel" class="personal-info__number page__input" id="personal-info__number" autocomplete="off" value="+996555123456" pattern="^\+([0-9 \s]{10,16})">
+
+                    <label for="personal-info__whatsapp" class="personal-info__label block__title">WhatsApp</label>
+                    <input type="tel" class="personal-info__whatsapp page__input" id="personal-info__whatsapp" autocomplete="off" value="+996555123456" pattern="^\+([0-9 \s]{10,16})">
+
+                    <label for="" class="personal-info__label block__title">Telegram</label>
+                    <input type="text" class="personal-info__telegram page__input" id="personal-info__telegram" autocomplete="off" placeholder="Введите ссылку на ваш телеграм">
+                    <button type="button" class="personal-info__btn btn__blue">Сохранить</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="profile__footer">
+        @@include('../html/mobile-nav.html')
+    </footer>
+
+
+    <div class="popup__wrapper animate__animated"></div>
+    <div class="popup balance-up__popup animate__animated">
+        <svg class="popup__icon" width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.333008 18.3333C0.333008 16.5652 1.03539 14.8695 2.28563 13.6193C3.53587 12.369 5.23156 11.6667 6.99967 11.6667C8.76778 11.6667 10.4635 12.369 11.7137 13.6193C12.964 14.8695 13.6663 16.5652 13.6663 18.3333H0.333008ZM6.99967 10.8333C4.23717 10.8333 1.99967 8.59583 1.99967 5.83333C1.99967 3.07083 4.23717 0.833328 6.99967 0.833328C9.76217 0.833328 11.9997 3.07083 11.9997 5.83333C11.9997 8.59583 9.76217 10.8333 6.99967 10.8333Z" fill="#FFBB3D"/>
+        </svg>
+        <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        <a href="../index.html" class="popup__btn btn__blue">На главную</a>
+    </div>
+
+
+
+    <script src="../js/mobile-header.min.js"></script>
+    <script src="../js/personal-info.min.js"></script>
+</body>
+</html>

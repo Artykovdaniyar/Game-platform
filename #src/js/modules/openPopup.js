@@ -1,16 +1,28 @@
-const openPopup = (popuuWindow, popupMessage = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor", popupBtnText = "Перейти к главной странице", popupBtnHref = "../index.html") => {
+const openPopup = () => {
+    const popupWindow = document.querySelector(".popup");
+    const popupWrapper = document.querySelector(".popup__wrapper");
+    
+    popupWrapper.style.display = "block";
+    popupWrapper.classList.remove("animate__fadeOut"); 
+    popupWrapper.classList.add("animate__fadeIn"); 
+    
+    popupWindow.style.display = "flex";
 
+    popupWindow.classList.remove("animate__fadeOut"); 
+    popupWindow.classList.add("animate__bounceInDown");
 
-    const popupText = document.querySelector(".popup__text");
-    const popupBtn = document.querySelector(".popup__btn");
+    popupWrapper.addEventListener("click", () => {
+        popupWindow.classList.remove("animate__bounceInDown");
+        popupWindow.classList.add("animate__fadeOut"); 
 
-    popupText.textContent = popupMessage;
-    popupBtn.textContent = popupBtnText;
-    popupBtn.href = popupBtnHref;
+        popupWrapper.classList.remove("animate__fadeIn"); 
+        popupWrapper.classList.add("animate__fadeOut"); 
 
-    popuuWindow.style.display = "flex"
-    popuuWindow.classList.add("animate__bounceInDown");
-
+        setTimeout(() =>{
+            popupWindow.style.display = "none";
+            popupWrapper.style.display = "none";
+        }, 1000)
+    }, false)
 
 }
 export default openPopup;

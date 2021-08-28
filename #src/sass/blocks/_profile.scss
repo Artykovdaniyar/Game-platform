@@ -1,5 +1,4 @@
 @media (min-width: 220px) {
-
     .profile {
         padding: 0 0 30px;
         &__header-wrapper{
@@ -9,8 +8,7 @@
         }
 
 		&__img {
-            width: 120px;
-            height: 120px;
+            object-fit: cover;
             border-radius: 42px;
 		}
 
@@ -28,7 +26,7 @@
             }
 		}
         &__statistic-fighting{
-            color: white;
+            color: $white-color;
         }
         &__statistic-win{
             color: #6BE795;
@@ -51,7 +49,7 @@
         }
 
         &__rate-btn {
-            color: white;
+            color: $white-color;
             margin-top: 20px;
         }
 
@@ -168,8 +166,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            color: white;
-            text-decoration: none;
+            color: $white-color;
+            
             width: 100%;
             padding: 10px 0;
         }
@@ -209,7 +207,7 @@
             line-height: 13px;
         }
         &__game-statistic-fighting{
-            color: white;
+            color: $white-color;
         }
         &__game-statistic-win{
             color: #6BE795;
@@ -242,7 +240,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             display: block;
-            width: 40%;
+            width: 44%;
             height: auto;
 		}
 
@@ -253,7 +251,7 @@
             flex-direction: row;
             padding: 20px 0 0;
             flex-wrap: wrap;
-            list-style: none;
+            
             width: 100%;
 		}
 
@@ -310,7 +308,5 @@
 		}
     }
 
-
-    
 }
 

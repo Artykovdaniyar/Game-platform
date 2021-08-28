@@ -1,67 +1,62 @@
-@media (max-width: 426px) {
+@media (min-width: 280px) {
     .review {
         padding: 40px 0 80px;
 
-    &__mark-title {
-        display: block;
-        padding-bottom: 17px;
-    }
+        &__mark-title {
+            display: block;
+            padding-bottom: 17px;
+        }
 
-    &__mark-list {
-        list-style: none;
+        &__mark-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 13px;
+        }
 
-    }
+        &__mark-name {
+            width: 90px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-right: 16px;
+            color: #B5B5B5;
+        }
 
-    &__mark-item {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 13px;
-    }
+        &__mark-dots {
+            display: block;
+        }
 
-    &__mark-name {
-        width: 90px;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        margin-right: 16px;
-        color: #B5B5B5;
-    }
+        &__mark-btn {
+            padding: 0 4px;
+            & > *{
+                pointer-events: none;
+            }
+        }
 
-    &__mark-dots {
-        display: block;
-    }
+        &__comment {
+            margin-top: 40px;
+        }
+        &__comment-title {
+            display: block;
+            margin-bottom: 15px;
+        }
 
-    &__mark-btn {
-        padding: 0 4px;
-        & > *{
-            pointer-events: none;
+        &__comment-textarea {
+            min-height: 109px;
+            resize: vertical;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                font-family: 'SF Pro Display', sans-serif;
+                color: #535C65;
+            }
+        }
+        &__submit-btn{
+            margin-top: 40px;
         }
     }
-
-    &__comment {
-        margin-top: 40px;
-    }
-    &__comment-title {
-        display: block;
-        margin-bottom: 15px;
-    }
-
-    &__comment-textarea {
-        min-height: 109px;
-        resize: vertical;
-        &:focus{
-            outline: none;
-        }
-        &::placeholder{
-            font-family: 'SF Pro Display', sans-serif;
-            color: #535C65;
-        }
-    }
-    &__submit-btn{
-        margin-top: 40px;
-    }
-}
 
 
 }

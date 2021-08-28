@@ -1,10 +1,10 @@
 .blue-button{
     display: block;
     font-size: 16px;
-    color: white;
+    color: $white-color;
     margin: 0 auto 40px;
     padding: 12px 25px;
-    background: #0761DC;
+    background: $blue-light-color;
     border: none;
     border-radius: 16px;
     &:active{
@@ -18,14 +18,14 @@
 .btn__blue{
     display: block;
     font-size: 16px;
-    color: white;
+    color: $white-color;
     margin: 0 auto;
     padding: 12px 25px;
-    background: #0761DC;
+    background: $blue-light-color;
     border: none;
     border-radius: 16px;
     width: fit-content;
-    text-decoration: none;
+    
 }
 .descr__text{
     font-weight: 400;

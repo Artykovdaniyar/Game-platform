@@ -29,6 +29,12 @@ let path={
     },
     clean: "./" + project_folder + "/"
 }
+const webpack = require("webpack-stream");
+const bro = require("gulp-bro");
+const babelify = require("babelify");
+
+
+
 
 let {src, dest} = require('gulp'),
     gulp = require('gulp'),
@@ -47,7 +53,8 @@ let {src, dest} = require('gulp'),
     webpCss = require('gulp-webp-css'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    browserify = require('gulp-browserify');
 
     function browserSync(params){
         browsersync.init({
@@ -107,9 +114,11 @@ let {src, dest} = require('gulp'),
         return src(path.src.js)
             .pipe(fileinclude())
             .pipe(dest(path.build.js))
-            // .pipe(babel({
-            //     presets: ['@babel/env']
-            // }))
+            .pipe(bro({
+                transform: [
+                  babelify.configure({ presets: ['es2015'] })
+                ]
+            }))
             .pipe(uglify())
             .pipe(
                 rename({

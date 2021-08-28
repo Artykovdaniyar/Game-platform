@@ -17,6 +17,8 @@ const formValidChecker = input => {
         if(input.value.trim() == "" || input.value.trim() == 0){
             input.classList.remove("valid__input")
             input.classList.add("invalid__input");
+        }else{
+            input.classList.add("valid__input");
         }
     });
 }

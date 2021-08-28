@@ -1,0 +1,74 @@
+@media (min-width:280px) {
+    .personal-info {
+    padding-bottom: 53px;
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 171px;
+    }
+
+    &__img-warpper {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 35px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 35px;
+    }
+    &__selected-img{
+        display: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 35px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 100%;
+    }
+
+    &__select-btn {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: $blue-light-color;
+    }
+
+    &__select-btn-icon {
+        pointer-events: none;
+    }
+
+    &__select-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2;
+
+    }
+
+    &__label {
+        display: block;
+        &:not(:first-child){
+            margin-top: 25px;
+        }
+    }
+    &__btn {
+        margin-top: 50px;
+    }
+}
+}
+
+

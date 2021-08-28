@@ -6,12 +6,12 @@ const formatItems = document.querySelectorAll(".create-fighting__format-item");
 const nextBtn = document.querySelector(".create-fighting__next-btn");
 const crewWrapper = document.querySelector(".create-fighting__crew-wrapper");
 let playerList = document.querySelector(".create-fighting__player-list");
-let balance = 2750;
+let balance = 750;
 let betPrice = 1000; 
-const balanceInfo =  document.querySelector(".create-fighting__balance")
+const balanceInfo =  document.querySelector(".balance")
 
-import headerMobileAnimetion from "./modules/headerMobileAnimetion.js";
-import goPreviousPage from "./modules/goPreviousPage.js";
+import headerMobileAnimetion from "./modules/headerMobileAnimetion";
+import goPreviousPage from "./modules/goPreviousPage";
 
 
 headerMobileAnimetion();
