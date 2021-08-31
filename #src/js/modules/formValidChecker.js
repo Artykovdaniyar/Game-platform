@@ -21,5 +21,5 @@ const formValidChecker = input => {
             input.classList.add("valid__input");
         }
     });
-}
+};
 export default formValidChecker;

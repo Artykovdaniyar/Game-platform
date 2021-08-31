@@ -1,11 +1,9 @@
-import formValidChecker from "./modules/formValidChecker.js";
 const input = document.querySelector(".page__input")
 const responseBtn = document.querySelector(".fighting__response-btn")
 const balanceInfo = document.querySelector(".balance");
-const popupWindow = document.querySelector(".popup")
 let balance = 4000;
 const fightingPrice = document.querySelector(".fighting__response-price-sum").textContent.replace(/[а-я]{1,}/, "")
-import openPopup from "./modules/openPopup.js"
+import openPopup from "./modules/openPopup"
 
 
 
@@ -19,6 +17,6 @@ responseBtn.addEventListener("click", (e) => {
         balanceInfo.style.display = "flex"
     }else{
         e.preventDefault()
-        openPopup(popupWindow, "Отклик на сражение успешно отправлен")
+        openPopup()
     }
 })

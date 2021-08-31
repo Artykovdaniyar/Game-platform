@@ -29,7 +29,6 @@ let path={
     },
     clean: "./" + project_folder + "/"
 }
-const webpack = require("webpack-stream");
 const bro = require("gulp-bro");
 const babelify = require("babelify");
 
@@ -113,12 +112,12 @@ let {src, dest} = require('gulp'),
     function js() {
         return src(path.src.js)
             .pipe(fileinclude())
-            .pipe(dest(path.build.js))
             .pipe(bro({
                 transform: [
                   babelify.configure({ presets: ['es2015'] })
                 ]
             }))
+            .pipe(dest(path.build.js)) 
             .pipe(uglify())
             .pipe(
                 rename({

@@ -1,31 +1,68 @@
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width:200px) {
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{
+        color: currentColor;
+        text-decoration: none;
+    }
+    a:focus, a:active {
+        outline: none;
+    }
+    a, a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    nav, footer, header, aside {
+        display: block;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        line-height: 1;
+        font-size: 14px;
+        -ms-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    body{
+        font-family: 'SF Pro Display', sans-serif;
+        background-color: $blue-dark-color;
+        color: $white-color;
+        overflow-x: hidden;
+    }
+    input, button, textarea {
+        font-family: inherit;
+    }
+    button{
+        color: $white-color;
+        border: transparent;
+        background: transparent;
+        cursor: pointer;
+        &::-moz-focus-inner {
+            padding: 0;
+            border: 0;
+        }
+    }
+    picture{
+        font-size: 0;
+    }
+    ul{
+        list-style: none;
+    }
+
+
+    h1, h2, h3, h4, h5, h6{
+        font-weight: 400;
+        font-size: inherit;
+        font-weight: inherit;
+    }
 }
-body{
-    font-family: 'SF Pro Display', sans-serif;
-    background-color: $blue-dark-color;
-    color: $white-color;
-    overflow-x: hidden;
-}
-button{
-    color: $white-color;
-    border: none;
-    background: none;
-}
-picture{
-    font-size: 0;
-}
-ul{
-    list-style: none;
-}
-a{
-    color: currentColor;
-    text-decoration: none;
-}
-h1, h2, h3, h4, h5, h6{
-    font-weight: 400;
-}
+

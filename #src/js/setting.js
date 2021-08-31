@@ -1,4 +1,4 @@
-import openPopup from "./modules/openPopup.js";
+import openPopup from "./modules/openPopup";
 const exitBtn = document.querySelector(".setting__exit-btn");
 const cancelBtn = document.querySelector(".popup__cancel-btn");
 const popupWindow = document.querySelector(".popup");

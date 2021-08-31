@@ -1,6 +1,8 @@
 @media (min-width: 280px) {
     .task {
-    
+        &__desktop-img{
+            display: none;
+        }
         &__offers{
             margin-top: 10px;
         }
@@ -35,13 +37,13 @@
             align-items: flex-start;
         }
     
-        &__img {
+        &__mobile-img {
             width: 42px;
             height: 42px;
             border-radius: 16px;
             margin-right: 10px;
         }
-    
+
     
         &__title {
             font-size: 16px;
@@ -110,5 +112,73 @@
         &__offers-num {
             padding-right: 3px;
         }
+    }
+}
+
+@media (min-width: 801px) {
+    .task {
+        padding-top: 35px;
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        &__item {
+            width: auto;
+            height: auto;
+            margin-bottom: 30px;
+            &:not(:last-child){
+                border: none;
+            }
+            &:not(:nth-child(3n)){
+                margin-right: 30px;
+            }
+    
+        }
+    
+        &__link {
+            flex-direction: column;
+            align-items: center;
+            width: 370px;
+            min-height: 360px;
+            background: #1B2732;
+            border: 1px solid #354A5F;
+            box-sizing: border-box;
+            border-radius: 16px;
+            margin: 0;
+            padding: 27px;
+            overflow: hidden;
+            transition: .5s background, .5s box-shadow;
+            &:hover{
+                background: #22303f;
+                box-shadow: 0px 0px 30px rgb(6, 13, 77);
+            }
+        }
+        &__mobile-img{
+            display: none;
+        }
+    
+
+        &__desktop-img {
+            display: block;
+            margin-top: 15px;
+            width: 100%;
+            height: 152px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    
+        &__date {
+            margin-top: 15px;
+        }
+    
+        &__bet {
+            margin-top: 10px;
+        }
+        &__offers {
+            margin-top: 0;
+        }
+    
+
     }
 }

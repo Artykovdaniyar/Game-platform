@@ -2,6 +2,8 @@
     .page__container{
         padding-left: 20px;
         padding-right: 20px;
+        width: auto;
+        margin: 0;
     }
     .page__main{
         padding: 64px 0 83px 0;
@@ -16,7 +18,7 @@
         font-size: 14px;
         line-height: 17px;
         background: #272F37;
-        border: none;
+        border: transparent;
         border-radius: 16px;
         color: $white-color;
         text-align: left;
@@ -36,4 +38,25 @@
             border: 2px solid red;
         }
     }
+
+
+    .invalid__input{
+        border: 2px solid red;
+    }
+    
+    .valid__input{
+        border: 2px solid green;
+    }
+    
+}
+@media (min-width: 801px) {
+    .page__container{
+        padding: 0;
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .page__main{
+        padding: 0;
+    }
+    
 }

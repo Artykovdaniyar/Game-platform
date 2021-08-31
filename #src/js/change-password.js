@@ -2,8 +2,6 @@ import formValidChecker from "./modules/formValidChecker"
 import openPopup from "./modules/openPopup"
 
 
-
-
 const allInputs = document.querySelectorAll("input");
 const saveBtn = document.querySelector(".change-password__save-btn")
 const oldPasswordInput = document.querySelector(".change-password__old-password");

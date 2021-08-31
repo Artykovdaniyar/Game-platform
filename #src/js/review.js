@@ -13,8 +13,8 @@ const reviewSubmitBtn = document.querySelector(".review__submit-btn");
 const reviewComment = document.querySelector(".review__comment-textarea");
 const popupWindow = document.querySelector(".popup")
 
-import formValidChecker from "./modules/formValidChecker.js";
-import openPopup from "./modules/openPopup.js";
+import formValidChecker from "./modules/formValidChecker";
+import openPopup from "./modules/openPopup";
 
 
 

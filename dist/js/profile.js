@@ -1,21 +1,20 @@
-const winPercentNum = document.querySelectorAll(".profile__game-statistic-win-percent");
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+"use strict";
 
-winPercentNum.forEach(num =>{
-    if(num.textContent >= 0 && num.textContent < 25){
-        num.style.color = "#FF0000"
-    }else if(num.textContent >= 25 && num.textContent < 50){
-        num.style.color = "#FF7A00"
-    }else if(num.textContent >= 50 && num.textContent < 75){
-        num.style.color = "#4CEF00"
-    }else if(num.textContent >= 75 && num.textContent <= 100){
-        num.style.color = "#6700EB"
+var winPercentNum = document.querySelectorAll(".profile__game-statistic-win-percent");
+
+winPercentNum.forEach(function (num) {
+    if (num.textContent >= 0 && num.textContent < 25) {
+        num.style.color = "#FF0000";
+    } else if (num.textContent >= 25 && num.textContent < 50) {
+        num.style.color = "#FF7A00";
+    } else if (num.textContent >= 50 && num.textContent < 75) {
+        num.style.color = "#4CEF00";
+    } else if (num.textContent >= 75 && num.textContent <= 100) {
+        num.style.color = "#6700EB";
     }
-})
+});
 
+function colorPercentNum() {}
 
-
-
-function colorPercentNum(){
-
-}
-
+},{}]},{},[1]);

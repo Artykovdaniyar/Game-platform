@@ -124,7 +124,7 @@
         &__comment-info {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             font-weight: 400;
             font-size: 12px;
             line-height: 18px;
@@ -220,6 +220,13 @@
             height: 10px;
             margin-right: 4px;
         }
+        &__review-wrapper{
+            height: 275px;
+            overflow-y: hidden;
+        }
+        &__review-wrapper.opened{
+            height: 100%;
+        }
     }
     
 
@@ -270,12 +277,8 @@
 
 		}
 
-		&__comment-info {
-            justify-content: flex-start;
-		}
-
 		&__comment-author {
-            width: calc(100% / 3);
+            width: fit-content;
 		}
 
 		&__review-btn {
@@ -310,3 +313,10 @@
 
 }
 
+@media (min-width: 375px){
+    .profile{
+		&__comment-info {
+            justify-content: flex-start;
+		}
+    }
+}

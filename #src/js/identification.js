@@ -5,12 +5,12 @@ const loadAdressDocImgBtn = document.querySelector(".identification__address-doc
 
 
 const previewCloseBtn = document.querySelectorAll(".identification__preview-close-btn");
-const allInputs = document.querySelectorAll(".input");
+const allInputs = document.querySelectorAll("input");
 const submitBtn = document.querySelector(".identification__submit-btn");
 const previewWrappers = document.querySelectorAll(".identification__preview-wrapper");
 
 
-import formValidChecker from "./modules/formValidChecker.js";
+import formValidChecker from "./modules/formValidChecker";
 
 
 
@@ -18,7 +18,6 @@ import formValidChecker from "./modules/formValidChecker.js";
 allInputs.forEach(input => {
     formValidChecker(input)
 });
-
 
 
 

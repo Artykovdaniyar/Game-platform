@@ -14,5 +14,5 @@ const openSideMenu = (triggerBtnSelector, closeBtnSelctor, menuSelector) =>{
             menu.classList.remove("active");
         })
 
-}
+};
 export default openSideMenu; 

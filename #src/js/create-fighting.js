@@ -1,16 +1,6 @@
 const nextBtn =  document.querySelector(".create-fighting__next-btn");
 const gameList = document.querySelectorAll(".create-fighting__game");
 
-import headerMobileAnimetion from "./modules/headerMobileAnimetion.js";
-import goPreviousPage from "./modules/goPreviousPage.js";
-goPreviousPage();
-headerMobileAnimetion();
-
-
-
-
-
-
 
 gameList.forEach(game =>{
 

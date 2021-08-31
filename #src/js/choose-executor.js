@@ -1,6 +1,7 @@
-import goPreviousPage from "./modules/goPreviousPage.js" ;
-import headerMobileAnimetion from "./modules/headerMobileAnimetion.js"
+import openPopup from "./modules/openPopup"
+const chooseExecutorBtn = document.querySelector(".fighting__choose-btn")
 
 
-goPreviousPage();
-headerMobileAnimetion();
+chooseExecutorBtn.addEventListener("click", () => {
+    openPopup()
+})

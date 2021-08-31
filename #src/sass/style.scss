@@ -8,7 +8,6 @@
 @import "base/utilities";
 @import "blocks/mobile";
 @import "blocks/task";
-@import "blocks/nav";
 @import "blocks/side-menu";
 @import "blocks/fighting";
 @import "blocks/customer";
@@ -34,17 +33,25 @@
 @import "blocks/setting";
 @import "blocks/personal-info";
 @import "blocks/change-password";
+@import "blocks/desktop";
 
 
 
 
 
-.invalid__input{
-    border: 2px solid red;
-}
 
-.valid__input{
-    border: 2px solid green;
-}
+
+
+
+
+
+
+
+@import "base/validation";
+
+
+
+
+
 
 

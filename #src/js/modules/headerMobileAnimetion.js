@@ -36,6 +36,6 @@ const headerMobileAnimetion = () => {
             // // Desired action
         }
 
-    })
-}
+    });
+};
 export default headerMobileAnimetion;

@@ -1,28 +1,35 @@
-const openPopup = () => {
-    const popupWindow = document.querySelector(".popup");
-    const popupWrapper = document.querySelector(".popup__wrapper");
-    
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var openPopup = function openPopup() {
+    var popupWindow = document.querySelector(".popup");
+    var popupWrapper = document.querySelector(".popup__wrapper");
+
     popupWrapper.style.display = "block";
-    popupWrapper.classList.remove("animate__fadeOut"); 
-    popupWrapper.classList.add("animate__fadeIn"); 
-    
+    popupWrapper.classList.remove("animate__fadeOut");
+    popupWrapper.classList.add("animate__fadeIn");
+
     popupWindow.style.display = "flex";
 
-    popupWindow.classList.remove("animate__fadeOut"); 
+    popupWindow.classList.remove("animate__fadeOut");
     popupWindow.classList.add("animate__bounceInDown");
 
-    popupWrapper.addEventListener("click", () => {
+    popupWrapper.addEventListener("click", function () {
         popupWindow.classList.remove("animate__bounceInDown");
-        popupWindow.classList.add("animate__fadeOut"); 
+        popupWindow.classList.add("animate__fadeOut");
 
-        popupWrapper.classList.remove("animate__fadeIn"); 
-        popupWrapper.classList.add("animate__fadeOut"); 
+        popupWrapper.classList.remove("animate__fadeIn");
+        popupWrapper.classList.add("animate__fadeOut");
 
-        setTimeout(() =>{
+        setTimeout(function () {
             popupWindow.style.display = "none";
             popupWrapper.style.display = "none";
-        }, 1000)
-    }, false)
+        }, 1000);
+    }, false);
+};
+exports.default = openPopup;
 
-}
-export default openPopup;
+},{}]},{},[1]);

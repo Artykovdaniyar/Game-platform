@@ -6,16 +6,10 @@ const fightingDateInput = document.querySelector(".create-fighting__date-input")
 const inputs = Array.from(document.querySelectorAll("input"));
 inputs.push(textarea);
 
-import headerMobileAnimetion from "./modules/headerMobileAnimetion.js"
-import goPreviousPage from "./modules/goPreviousPage.js"
-headerMobileAnimetion();
-goPreviousPage();
 
 
-
-import ValidNumChecker from "./modules/ValidNumChecker.js"
-import formValidChecker from "./modules/formValidChecker.js";
-
+import ValidNumChecker from "./modules/ValidNumChecker"
+import formValidChecker from "./modules/formValidChecker";
 
 
 
@@ -34,19 +28,7 @@ fightingTimeInput.addEventListener("input", (e) => {
         }
     }
 
-})
-// fightingDateInput.addEventListener("focusin", () => {
-//     if(fightingDateInput.value == ""){
-//         fightingDateInput.value = "--.--.----"
-//     }
-// })
-// fightingDateInput.addEventListener("focusout", () => {
-//     if(fightingDateInput.value == "--.--.---"){
-//         fightingDateInput.value = ""
-//     }else{
-//         fightingDateInput.classList.add("valid__input")
-//     }
-// })
+});
 fightingDateInput.addEventListener("input", (e) => {
     if(e.inputType != "deleteContentBackward"){
         if(fightingDateInput.value.length == 2 || fightingDateInput.value.length == 5){
@@ -54,7 +36,7 @@ fightingDateInput.addEventListener("input", (e) => {
         }
     }
 
-})
+});
 
 nextBtn.addEventListener("click", function(e){
     inputs.forEach(input =>{

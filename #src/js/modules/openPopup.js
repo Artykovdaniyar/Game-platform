@@ -24,5 +24,5 @@ const openPopup = () => {
         }, 1000)
     }, false)
 
-}
+};
 export default openPopup;

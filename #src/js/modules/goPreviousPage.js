@@ -3,5 +3,5 @@ const goPreviousPage = () =>{
     backBtn.addEventListener("click", () =>{
         window.history.back()
     })
-}
+};
 export default goPreviousPage;

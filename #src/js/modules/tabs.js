@@ -16,6 +16,6 @@ const tabs = () => {
         tabContent1.classList.add("active")
         tabContent2.classList.remove("active")
     });
-}
+};
 export default tabs;
 

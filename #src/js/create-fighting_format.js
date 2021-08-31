@@ -1,4 +1,3 @@
-// let formatInput = document.querySelector(".create-fighting__format-input");
 const formatInput = document.getElementById("create-fighting__format-input");
 const crewInput = document.querySelector(".create-fighting__crew-input")
 const formatMenu = document.querySelector(".create-fighting__format-menu");
@@ -6,16 +5,12 @@ const formatItems = document.querySelectorAll(".create-fighting__format-item");
 const nextBtn = document.querySelector(".create-fighting__next-btn");
 const crewWrapper = document.querySelector(".create-fighting__crew-wrapper");
 let playerList = document.querySelector(".create-fighting__player-list");
-let balance = 750;
+
+let balance = 5000;
 let betPrice = 1000; 
 const balanceInfo =  document.querySelector(".balance")
 
-import headerMobileAnimetion from "./modules/headerMobileAnimetion";
-import goPreviousPage from "./modules/goPreviousPage";
 
-
-headerMobileAnimetion();
-goPreviousPage();
 
 formatInput.addEventListener("input", function(){
     this.value.trim()
