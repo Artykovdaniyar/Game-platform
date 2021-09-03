@@ -15,8 +15,23 @@
         padding: 64px 0 54px;
         z-index: 3;
         background: linear-gradient(180deg, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100% / cover no-repeat;
-        transition: .5s left;
+        transition: .1s left;
         overflow-y: scroll;
+        transition: .5s all;
+        &__close-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 0;
+            padding: 23px;
+            transition: .5s all;
+        }
+        &__close-icon{
+            pointer-events: none;
+            fill: $white-color;
+            transition: .5s all;
+        }
+
         &__user {
             display: flex;
             justify-content: flex-start;

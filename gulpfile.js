@@ -51,9 +51,7 @@ let {src, dest} = require('gulp'),
     webphtml = require('gulp-webp-html'),
     webpCss = require('gulp-webp-css'),
     ttf2woff = require('gulp-ttf2woff'),
-    ttf2woff2 = require('gulp-ttf2woff2'),
-    babel = require('gulp-babel'),
-    browserify = require('gulp-browserify');
+    ttf2woff2 = require('gulp-ttf2woff2');
 
     function browserSync(params){
         browsersync.init({

@@ -12,18 +12,6 @@
     }
 }
 
-.btn__blue{
-    display: block;
-    font-size: 16px;
-    color: $white-color;
-    margin: 0 auto;
-    padding: 12px 25px;
-    background: $blue-light-color;
-    border: none;
-    border-radius: 16px;
-    width: fit-content;
-    
-}
 .descr__text{
     font-weight: 400;
     font-size: 12px;
@@ -46,4 +34,17 @@
 .noscroll{
     overflow-y: hidden;
     margin-right: 8px;
+}
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

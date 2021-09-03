@@ -39,7 +39,7 @@
     
         // Fighting Form
         //===========================================
-        &__form-label{
+        &__filter-label{
             display: block;
             margin-top: 25px;
         }
@@ -59,7 +59,7 @@
     
         // Fighting Format 
          //===========================================
-         &__format-menu {
+         &__filterat-menu {
             width: 100%;
             margin-top: 10px;
             height: 0;
@@ -77,14 +77,14 @@
             }
         }
     
-        &__format-list {
+        &__filterat-list {
             
             font-size: 14px;
             line-height: 17px;
             color: #FFFFFF;
         }
     
-        &__format-item {
+        &__filterat-item {
             padding: 10px 20px;
             &:not(:last-child){
                 @include borderBottom;

@@ -34,9 +34,10 @@
     }
     body{
         font-family: 'SF Pro Display', sans-serif;
-        background-color: $blue-dark-color;
+        background: $blue-dark-color;
         color: $white-color;
         overflow-x: hidden;
+
     }
     input, button, textarea {
         font-family: inherit;
@@ -64,5 +65,12 @@
         font-size: inherit;
         font-weight: inherit;
     }
+
 }
 
+@media (min-width: 500px) {
+    body{
+        background: $blue-dark-color;
+        background: url("../img/body-bg2.jpg");
+    }
+}
