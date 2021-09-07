@@ -114,8 +114,7 @@ let {src, dest} = require('gulp'),
                 transform: [
                   babelify.configure({ presets: ['es2015'] })
                 ]
-            }))
-            .pipe(dest(path.build.js)) 
+            })) 
             .pipe(uglify())
             .pipe(
                 rename({
