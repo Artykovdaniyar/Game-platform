@@ -2,6 +2,7 @@
   "name": "gameplatform",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {"url": "https://github.com/artykovdaniyar/Game-platform"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
