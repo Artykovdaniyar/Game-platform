@@ -1507,9 +1507,9 @@
     height: 100%;
     padding: 64px 0 54px;
     z-index: 3;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 27, 36, 0.8)), to(#121B24)), url(../img/sidemenu-bg.png) 100% 100%/cover no-repeat;
-    background: -o-linear-gradient(top, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100%/cover no-repeat;
-    background: linear-gradient(180deg, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100%/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(18, 27, 36, 0.5)), to(#121B24)), url(../img/sidemenu-bg.png) 100% 100%/cover no-repeat;
+    background: -o-linear-gradient(top, rgba(18, 27, 36, 0.5) 0, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100%/cover no-repeat;
+    background: linear-gradient(180deg, rgba(18, 27, 36, 0.5) 0, #121B24 100%), url(../img/sidemenu-bg.png) 100% 100%/cover no-repeat;
     -webkit-transition: .1s left;
     -o-transition: .1s left;
     transition: .1s left;
@@ -3002,7 +3002,7 @@
     display: block;
   }
 
-  .create-fighting__filterat-menu {
+  .create-fighting__format-menu {
     width: 100%;
     margin-top: 10px;
     height: 0;
@@ -3018,24 +3018,24 @@
     transition: 1s height;
   }
 
-  .create-fighting__filterat-menu.active {
+  .create-fighting__format-menu.active {
     padding: 17px 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
 
-  .create-fighting__filterat-list {
+  .create-fighting__format-list {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
   }
 
-  .create-fighting__filterat-item {
+  .create-fighting__format-item {
     padding: 10px 20px;
   }
 
-  .create-fighting__filterat-item:not(:last-child) {
+  .create-fighting__format-item:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -4891,9 +4891,9 @@
  @media (min-width: 280px){
 
 @supports (-webkit-appearance:none){
-.side-menu{background:-webkit-gradient(linear, left top, left bottom, from(rgba(18, 27, 36, 0.8)), to(#121B24)), url(../img/sidemenu-bg.webp) 100% 100%/cover no-repeat}
-.side-menu{background:-o-linear-gradient(top, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.webp) 100% 100%/cover no-repeat}
-.side-menu{background:linear-gradient(180deg, rgba(18, 27, 36, 0.8) 0%, #121B24 100%), url(../img/sidemenu-bg.webp) 100% 100%/cover no-repeat}
+.side-menu{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(18, 27, 36, 0.5)), to(#121B24)), url(../img/sidemenu-bg.webp) 100% 100%/cover no-repeat}
+.side-menu{background:-o-linear-gradient(top, rgba(18, 27, 36, 0.5) 0, #121B24 100%), url(../img/sidemenu-bg.webp) 100% 100%/cover no-repeat}
+.side-menu{background:linear-gradient(180deg, rgba(18, 27, 36, 0.5) 0, #121B24 100%), url(../img/sidemenu-bg.webp) 100% 100%/cover no-repeat}
 .popup{background:url("../img/popup-bg.webp") center center/cover no-repeat}
 }
 

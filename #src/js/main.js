@@ -38,7 +38,7 @@ showByGameName(warFacefilterBtn, "warface");
 
 
 window.addEventListener("DOMContentLoaded", () => {
-    if(window.innerWidth < 426){
+    if(window.innerWidth < 786){
         openSideMenu(".mobile-header__menu", ".side-menu__close-btn", ".side-menu");
         headerMobileAnimetion();
     }

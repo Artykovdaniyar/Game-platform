@@ -44,7 +44,7 @@ var taskFiterBtns = document.querySelectorAll(".task__games-btn");
 (0, _showByGameName2.default)(warFacefilterBtn, "warface");
 
 window.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth < 426) {
+    if (window.innerWidth < 786) {
         (0, _openSideMenu2.default)(".mobile-header__menu", ".side-menu__close-btn", ".side-menu");
         (0, _headerMobileAnimetion2.default)();
     }
