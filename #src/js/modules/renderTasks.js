@@ -50,7 +50,7 @@ const renderTasks = () => {
             title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
             gameName: "lol",
             mobileImg: "./img/lol-mini.png",
-            desktopImg: "./img/LOL.png",
+            desktopImg: "./img/lol.png",
             price: "1000 сом",
             view: "562",
             offer: "0"
@@ -122,7 +122,7 @@ const renderTasks = () => {
             title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
             gameName: "lol",
             mobileImg: "./img/lol-mini.png",
-            desktopImg: "./img/LOL.png",
+            desktopImg: "./img/lol.png",
             price: "1000 сом",
             view: "562",
             offer: "0"
@@ -194,7 +194,7 @@ const renderTasks = () => {
             title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
             gameName: "lol",
             mobileImg: "./img/lol-mini.png",
-            desktopImg: "./img/LOL.png",
+            desktopImg: "./img/lol.png",
             price: "1000 сом",
             view: "562",
             offer: "0"
@@ -266,7 +266,7 @@ const renderTasks = () => {
             title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
             gameName: "lol",
             mobileImg: "./img/lol-mini.png",
-            desktopImg: "./img/LOL.png",
+            desktopImg: "./img/lol.png",
             price: "1000 сом",
             view: "562",
             offer: "0"
@@ -338,7 +338,7 @@ const renderTasks = () => {
             title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
             gameName: "lol",
             mobileImg: "./img/lol-mini.png",
-            desktopImg: "./img/LOL.png",
+            desktopImg: "./img/lol.png",
             price: "1000 сом",
             view: "562",
             offer: "0"
