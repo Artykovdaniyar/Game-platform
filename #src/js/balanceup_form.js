@@ -7,12 +7,22 @@ const   cardNum = document.querySelector(".balance-up__card-num"),
         allInputs = document.querySelectorAll("input"),
         topUpPopup = document.querySelector(".balance-up__popup");
 
+import openPopup from "./modules/openPopup"
 
 
-        
+
+
 
 
 cardNum.addEventListener("input", function(e){
+    let value = e.target.value
+    if(isNaN(value)){
+        cardNum.classList.remove("valid__input")
+        cardNum.classList.add("invalid__input");
+        if(value.match(/[а-яА-ЯёЁa-zA-Z]/)){
+            cardNum.value = value.replace(e.target.value, "")
+        }
+    }
 
     if(e.inputType != "deleteContentBackward"){
         if(cardNum.value.length == "4" || cardNum.value.length == "9" || cardNum.value.length == "14"){
@@ -23,7 +33,10 @@ cardNum.addEventListener("input", function(e){
 
 
 cardYear.addEventListener("input", function(e){
-    if(cardYear.value <= "20"){
+    if(cardYear.value.length > 2){
+        cardYear.value = cardYear.value.slice(0, 2);
+    } 
+    else if(cardYear.value <= "20"){
         cardYear.classList.remove("valid__input")
         cardYear.classList.add("invalid__input");
 
@@ -34,6 +47,32 @@ cardYear.addEventListener("input", function(e){
     }
 
 });
+
+cardMonth.addEventListener("input", function(e){
+    if(cardMonth.value.length > 2){
+        cardMonth.value = cardMonth.value.slice(0, 2);
+    }else if(cardMonth.value.length < 2){
+        cardMonth.classList.remove("valid__input")
+        cardMonth.classList.add("invalid__input");
+    }else if(cardMonth.validity.valid == true){
+        cardMonth.classList.remove("invalid__input");
+        cardMonth.classList.add("valid__input")
+
+    }
+
+});
+
+cardCvc.addEventListener("input", function(e){
+    if(cardCvc.value.length > 3){
+        cardCvc.value = cardCvc.value.slice(0, 3);
+    }else if(cardCvc.value.length < 3){
+        cardCvc.classList.remove("valid__input")
+        cardCvc.classList.add("invalid__input");
+    }
+});
+
+
+
 
 
 
@@ -80,8 +119,7 @@ topUpBtn.addEventListener("click", (e) => {
             e.preventDefault()
         }else if(input.classList.contains("valid__input")){
             e.preventDefault()
-            topUpPopup.style.display = "flex"
-            topUpPopup.classList.add("animate__bounceInDown")
+            openPopup()
         }
     });
 })

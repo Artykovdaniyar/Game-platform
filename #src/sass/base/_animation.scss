@@ -137,6 +137,7 @@
   .animate__slideInDown {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown;
+    animation-duration: 0.6s;
   }
 
 
@@ -168,6 +169,7 @@
   .animate__slideOutUp {
     -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp;
+    animation-duration: 0.6s;
   }
 
 @-webkit-keyframes bounceInDown {

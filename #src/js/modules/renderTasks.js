@@ -361,6 +361,96 @@ const renderTasks = () => {
             view: "562",
             offer: "0"
         },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "minecraft",
+            mobileImg: "./img/minecraft-mini.png",
+            desktopImg: "./img/Minecraft.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "warface",
+            mobileImg: "./img/warface-mini.png",
+            desktopImg: "./img/Warface.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "dota2",
+            mobileImg: "./img/dota2-mini.png",
+            desktopImg: "./img/dota2.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "csgo",
+            mobileImg: "./img/csgo-mini.png",
+            desktopImg: "./img/CS.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "wot",
+            mobileImg: "./img/wot-mini.png",
+            desktopImg: "./img/wot.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "pubg",
+            mobileImg: "./img/pubg-mini.png",
+            desktopImg: "./img/PUBG.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "heartstone",
+            mobileImg: "./img/hearth-stone-mini.png",
+            desktopImg: "./img/hearth-stone.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "lol",
+            mobileImg: "./img/lol-mini.png",
+            desktopImg: "./img/lol.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "minecraft",
+            mobileImg: "./img/minecraft-mini.png",
+            desktopImg: "./img/Minecraft.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
+        {
+            title: "Dota 2, Играем на SF, мид до 2 смертей или до падения т1",
+            gameName: "warface",
+            mobileImg: "./img/warface-mini.png",
+            desktopImg: "./img/Warface.png",
+            price: "1000 сом",
+            view: "562",
+            offer: "0"
+        },
        
     ];
     function render() {
@@ -372,7 +462,7 @@ const renderTasks = () => {
              <a href="./pages/fighting_response_1x1.html" class="task__link">
                 <img src="${task.mobileImg}" alt="user-image" class="task__mobile-img">
                 <div class="task__descr">
-                    <h2 class="task__title"${task.title}</h2>
+                    <h2 class="task__title">${task.title}</h2>
                     <img src="${task.desktopImg}" alt="user-image" class="task__desktop-img">
                     <p class="task__date">Игра начинается: <span class="task__date-time">20:00, 05.06.21</span></p>
                     <p class="task__bet">Ставка: <span class="task__bet-price">${task.price}</span></p>

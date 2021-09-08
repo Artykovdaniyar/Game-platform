@@ -3,18 +3,34 @@
         &__desktop-img{
             display: none;
         }
-        &__offers{
-            margin-top: 10px;
-        }
-        &__more-btn{
-            display: none;
-        }
+
         &__filter {
             display: none;
         }
-        &__more{
-            display: none;
+        &__more {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: $white-color;
         }
+    
+        &__more-text {
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        &__more-btn{
+            margin-top: 20px;
+            display: block;
+            color: $white-color;
+            padding: 9px 20px;
+            border: 1px solid #FFFFFF;
+            border-radius: 16px;
+            background: transparent;
+        }
+
     }
 }
 @media (min-width: 320px) {
@@ -95,7 +111,7 @@
             align-items: center;
             flex-wrap: wrap;
             color: $grey-color;
-            padding: 17px 0 0;
+            padding: 7px 0 0;
             font-size: 12px;
             line-height: 14px;
         }
@@ -106,6 +122,7 @@
             display: flex;
             align-items: center;
             margin-right: 30px;
+            padding-top: 10px;
         }
     
         &__views-num {
@@ -115,6 +132,7 @@
         &__offers {
             display: flex;
             align-items: flex-start;
+            padding-top: 10px;
         }
     
     
@@ -179,33 +197,10 @@
         &__bet {
             margin-top: 10px;
         }
-        &__offers {
-            margin-top: 0;
-        }
-        &__more {
-            display: block;
-            margin: 0 auto;
-            margin-top: 70px;
-            color: $white-color;
-        }
-    
-        &__more-text {
-            display: block;
-            text-align: center;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 25px;
-        }
-        &__more-btn{
-            margin-top: 20px;
-            display: block;
-            color: $white-color;
-            padding: 9px 20px;
-            border: 1px solid #FFFFFF;
-            border-radius: 16px;
-            background: transparent;
-        }
 
+        &__more {
+            margin-top: 70px;
+        }
     }
 }
 
@@ -338,6 +333,5 @@
         &__games{
             margin-left: auto;
         }
-
     }
 }

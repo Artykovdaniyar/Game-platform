@@ -11,6 +11,8 @@ const previewWrappers = document.querySelectorAll(".identification__preview-wrap
 
 
 import formValidChecker from "./modules/formValidChecker";
+import openPopup from "./modules/openPopup";
+
 
 
 
@@ -70,6 +72,10 @@ submitBtn.addEventListener("click", function(e){
         e.preventDefault();
         loadPersonalDocImgBtn.classList.add("invalid__input");
         loadAdressDocImgBtn.classList.add("invalid__input");
+    }else{
+        e.preventDefault()
+        openPopup()
     }
+
 
 });

@@ -1,8 +1,6 @@
 const nextBtn = document.querySelector(".create-fighting__next-btn");
 const textarea = document.querySelector("textarea");
 const betPriceInput = document.querySelector(".create-fighting__bet-input");
-const fightingTimeInput = document.querySelector(".create-fighting__time-input");
-const fightingDateInput = document.querySelector(".create-fighting__date-input");
 const inputs = Array.from(document.querySelectorAll("input"));
 inputs.push(textarea);
 
@@ -21,22 +19,6 @@ inputs.forEach(input => {
 
 ValidNumChecker(betPriceInput, 500)
 
-fightingTimeInput.addEventListener("input", (e) => {
-    if(e.inputType != "deleteContentBackward"){
-        if(fightingTimeInput.value.length == 2){
-            fightingTimeInput.value = fightingTimeInput.value + ":"
-        }
-    }
-
-});
-fightingDateInput.addEventListener("input", (e) => {
-    if(e.inputType != "deleteContentBackward"){
-        if(fightingDateInput.value.length == 2 || fightingDateInput.value.length == 5){
-            fightingDateInput.value = fightingDateInput.value + "."
-        }
-    }
-
-});
 
 nextBtn.addEventListener("click", function(e){
     inputs.forEach(input =>{

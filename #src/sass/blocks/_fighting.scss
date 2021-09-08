@@ -137,9 +137,7 @@
         &__desk-item--winner {
             background: #5EA2FF;
         }
-    
-        &__desk-score {
-        }
+
     
         &__desk-item2 {
             position: absolute;
@@ -183,9 +181,6 @@
             font-size: 16px;
             line-height: 24px;
             font-weight: normal;
-        }
-        &__details{
-            padding-bottom: 133px;
         }
         &__cancel-btn{
             width: 100vw;
@@ -241,9 +236,7 @@
             padding-top: 20px;
         }
         &__offers-executor-info{
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
+            margin-right: 20px;
         }
     
         &__offers-img {
@@ -317,6 +310,7 @@
         }
     
         &__offers-contacts {
+            width: 100%;
             margin-top: 30px;
         }
     

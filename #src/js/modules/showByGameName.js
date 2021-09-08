@@ -1,4 +1,6 @@
-const showByGameName = (btn, gameName) =>{
+const showByGameName = (gameDataName, gameName) =>{
+    const btn = document.querySelector(`button[data-gamename=${gameDataName}]`);
+    
     btn.addEventListener("click", (e) => {
         const taskList = document.querySelector(".task__list");
         const taskItems = taskList.querySelectorAll("li");
