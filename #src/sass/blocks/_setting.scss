@@ -21,7 +21,7 @@
         color: #FFFFFF;
         width: 100%;
         padding: 25px 20px;
-        transition: .2s all;
+        transition: .2s background, .2s color;
         &:active{
             color: black;
             background: $white-color;

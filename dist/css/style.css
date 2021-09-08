@@ -1352,9 +1352,6 @@
     border: 1px solid transparent;
     background-color: transparent;
     cursor: pointer;
-    -webkit-transition: .5s all;
-    -o-transition: .5s all;
-    transition: .5s all;
   }
 
   .mobile-header__btn:active {
@@ -1363,6 +1360,7 @@
 
   .mobile-header__btn:active > svg {
     fill: #111A23;
+    pointer-events: none;
   }
 
   .mobile-header__back-btn {
@@ -1387,6 +1385,7 @@
     -webkit-transition: .2s all;
     -o-transition: .2s all;
     transition: .2s all;
+    pointer-events: none;
   }
 
   .mobile-header__back-btn:active {
@@ -1419,7 +1418,7 @@
   .mobile-header__setting-btn {
     position: absolute;
     color: white;
-    top: 1;
+    top: 0;
     right: 0;
   }
 
@@ -2901,9 +2900,6 @@
     border: none;
     border-bottom: 2px solid transparent;
     background: #111A23;
-    -webkit-transition: .5s border;
-    -o-transition: .5s border;
-    transition: .5s border;
   }
 
   .tabs__item.active {
@@ -2993,7 +2989,7 @@
     margin-top: 40px;
   }
 
-  .create-fighting__filter-label {
+  .create-fighting__form-label {
     display: block;
     margin-top: 25px;
   }
@@ -3630,11 +3626,11 @@
     color: #FFFFFF;
   }
 
-  .identification__filter {
+  .identification__form {
     margin-top: 25px;
   }
 
-  .identification__filter-label {
+  .identification__form-label {
     display: block;
     margin-top: 25px;
   }
@@ -3774,9 +3770,9 @@
     color: #FFFFFF;
     width: 100%;
     padding: 25px 20px;
-    -webkit-transition: .2s all;
-    -o-transition: .2s all;
-    transition: .2s all;
+    -webkit-transition: .2s background, .2s color;
+    -o-transition: .2s background, .2s color;
+    transition: .2s background, .2s color;
   }
 
   .setting__link:active,

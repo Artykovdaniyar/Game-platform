@@ -14,7 +14,6 @@
         border: none;
         border-bottom: 2px solid transparent;
         background: $blue-dark-color;
-        transition: .5s border;
     }
     &__item.active {
         border-bottom: 2px solid #FFBB3D;

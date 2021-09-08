@@ -22,12 +22,12 @@
             border: 1px solid transparent;
             background-color: transparent;
             cursor: pointer;
-            transition: .5s all;
             &:active{
                 background-color: $white-color;
             }
             &:active > svg{
                 fill: $blue-dark-color;
+                pointer-events: none;
             }
         }
         &__back-btn{
@@ -44,6 +44,7 @@
             & > svg{
                 fill: #e4e4Ee;
                 transition: .2s all;
+                pointer-events: none;
             }
             &:active{
                 background: $white-color;
@@ -69,7 +70,7 @@
         &__setting-btn{
             position: absolute;
             color: $white-color;
-            top: 1;
+            top: 0;
             right: 0;
             &:active{
                 color: $black-color;
